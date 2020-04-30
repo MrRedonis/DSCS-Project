@@ -20,6 +20,16 @@ public class Lane {
             lane.add(new Cell(i));
         }
     }
+    public void simulate() throws Exception {
+        for(int i=lane.size()-1;i>=0;i--)
+        {
+            if ( lane.get(i).getOccupied())
+            {
+                lane.get(i+1).occupyCell(lane.get(i).car);
+                lane.get(i).freeCell();
+            }
+        }
+    }
     public Cell get(int index)
     {
         return lane.get(index);

@@ -26,10 +26,12 @@ public class Cell {
         return occupied;
     }
 
-    public void occupyCell( Car car)
-    {
-        this.occupied=true;
-        this.car=car;
+    public void occupyCell( Car car) throws Exception {
+        if(!occupied) {
+            this.occupied = true;
+            this.car = car;
+        }
+        else throw new Exception("Już zajęte");
     }
     public  void freeCell()
     {

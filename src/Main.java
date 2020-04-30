@@ -6,15 +6,17 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Car p1=new Car(50,70);
-        Lane kopernika=new Lane(0,54,"Dworzec-Kopernika",false);
+    public static void main(String[] args) throws Exception {
+        //Car p1=
+         Lane kopernika=new Lane(0,54,"Dworzec-Kopernika",false);
 
+for(int i=16;i<26;i++)
+    kopernika.get(i*2).occupyCell(new Car(i*3,70));
 
-        kopernika.get(4).occupyCell(p1);
-
-        //ulica[10].occupyCell(p1);
-
+for(int i=0;i<10;i++) {
+    kopernika.simulate();
+}
+kopernika.get(4);
 	// write your code here
     }
 }

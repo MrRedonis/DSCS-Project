@@ -2,6 +2,7 @@ package Model.Road;
 
 import Model.Car;
 
+import java.io.PrintStream;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,23 +18,26 @@ public class LaneSection {
     String label;
     Queue<Car> waitingCar;
 
-    public LaneSection(int from, int to, String label, boolean islimited)
-    {
-        this.lane=new ArrayList<>();
-        this.waitingCar=new ArrayDeque<>();
-        this.islimited=islimited;
-        this.label=label;
-        for(int i=from;i<to;i++) {
+    public LaneSection(int from, int to, String label, boolean islimited) {
+        this.lane = new ArrayList<>();
+        this.waitingCar = new ArrayDeque<>();
+        this.islimited = islimited;
+        this.label = label;
+        for (int i = from; i < to; i++) {
             //lane.add(new Cell(i));
             lane.add(new Cell(i));
         }
     }
-    public void simulate() throws Exception {
-        Boolean cond=true;
-        for(int i=lane.size()-1;i>=0;i--) //dla każdej komórki
-        {
 
-            if ( lane.get(i).getOccupied()) {//jezeli jest zajeta
+    public void simulate() throws Exception {
+        Boolean cond = true;
+        for (int i = lane.size() - 1; i >= 0; i--) //dla każdej komórki
+        {
+            // toMaxVelocity(i);
+
+            if (lane.get(i).getOccupied()) {//jezeli jest zajeta
+                cond = true;
+                toMaxVelocity(i);
                 while (cond) {
                     double plus = (lane.get(i).car.getVelocity()) / 27;// zmiana predkosci z km/h na kratki/s
                     if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 27 km/h
@@ -44,21 +48,19 @@ public class LaneSection {
                     } else {
                         lane.get(i + (int) plus).occupyCell(lane.get(i).car); //zajmij komorke
                         lane.get(i).freeCell();// zwolnij poprzednia
-                        cond=false;//nie powtarzaj
+                        cond = false;//nie powtarzaj
                     }
                 }
             }
         }
-        if(!waitingCar.isEmpty())
-        {
-            if(!lane.get(0).getOccupied())
-            {
+        if (!waitingCar.isEmpty()) {
+            if (!lane.get(0).getOccupied()) {
                 addCar(waitingCar.poll());
             }
         }
     }
-    public Cell get(int index)
-    {
+
+    public Cell get(int index) {
         return lane.get(index);
     }
 
@@ -71,7 +73,22 @@ public class LaneSection {
         }
     }
 
+    public void toMaxVelocity(int index) {
+        if ((this.lane.get(index).car.getVelocity() + 27) <= this.lane.get(index).car.maxvelocity) {
+            this.lane.get(index).car.increaseVelocity(27);
+        }
+    }
 
-
-
+    public void print(PrintStream out) {
+        //out.flush();
+        for (int i = 0;i<this.lane.size()-1;i++) {
+            if (this.lane.get(i).getOccupied()) out.println(i+"  X");
+            else out.println(i+" ");
+        }
+    }
 }
+
+
+
+
+

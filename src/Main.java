@@ -8,12 +8,15 @@ public class Main {
         LaneSection kopernika = new LaneSection(0, 54, "Dworzec-Kopernika", false);
 
         for (int i = 1; i < 10; i++) {
-            kopernika.addCar(new Car(27, 70));
+            kopernika.addCar(new Car(27, 27));
+            kopernika.addCar(new Car(54, 54));
             kopernika.simulate();
+            kopernika.print(System.out);
+
         }
 
-        for (int i = 1; i < 2; i++) {
-            kopernika.addCar(new Car(2*27, 70));
+        for (int i = 1; i < 10; i++) {
+            kopernika.addCar(new Car(54, 54));
             kopernika.simulate();
         }
 

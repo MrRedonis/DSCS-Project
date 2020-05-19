@@ -8,7 +8,7 @@ import Model.Car;
 public class Cell {
     public boolean occupied; //czy komórka jest zajęta
     public Car car; //zamochód znajduje się na komórce
-    public static double measure=7.5;
+    public static double measure=5;
     public int number;
 
     public Cell(int number){

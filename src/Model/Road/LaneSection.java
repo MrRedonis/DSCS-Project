@@ -17,10 +17,14 @@ public class LaneSection {
     Boolean islimited;
     String label;
     Queue<Car> waitingCar;
+    Queue<Car> outOfSection;
+
+
 
     public LaneSection(int from, int to, String label, boolean islimited) {
         this.lane = new ArrayList<>();
         this.waitingCar = new ArrayDeque<>();
+        this.outOfSection=new ArrayDeque<>();
         this.islimited = islimited;
         this.label = label;
         for (int i = from; i < to; i++) {
@@ -39,11 +43,18 @@ public class LaneSection {
                 cond = true;
                 toMaxVelocity(i);
                 while (cond) {
-                    double plus = (lane.get(i).car.getVelocity()) / 27;// zmiana predkosci z km/h na kratki/s
-                    if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 27 km/h
+                    double plus = (lane.get(i).car.getVelocity()) / 18;// zmiana predkosci z km/h na kratki/s
+                    if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 18 km/h
                         break;
-                    if (lane.get(i + (int) plus).getOccupied()) {//jezeli komorka do ktroej chce pojechac jest zajeta
-                        lane.get(i).car.decreaseVelocity(27); //zmniejsz predkosc o 1 komorke/s
+                    if(i+(int)plus>(lane.size()-1)) {
+                        outOfSection.add(lane.get(i).car);
+                        lane.get(i).freeCell();
+                        cond=false;
+
+                    }
+
+                    else if (lane.get(i + (int) plus).getOccupied()) {//jezeli komorka do ktroej chce pojechac jest zajeta
+                        lane.get(i).car.decreaseVelocity(18); //zmniejsz predkosc o 1 komorke/s
 
                     } else {
                         lane.get(i + (int) plus).occupyCell(lane.get(i).car); //zajmij komorke
@@ -74,8 +85,8 @@ public class LaneSection {
     }
 
     public void toMaxVelocity(int index) {
-        if ((this.lane.get(index).car.getVelocity() + 27) <= this.lane.get(index).car.maxvelocity) {
-            this.lane.get(index).car.increaseVelocity(27);
+        if ((this.lane.get(index).car.getVelocity() + 18) <= this.lane.get(index).car.maxvelocity) {
+            this.lane.get(index).car.increaseVelocity(18);
         }
     }
 

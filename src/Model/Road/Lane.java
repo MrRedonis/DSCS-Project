@@ -5,10 +5,12 @@ package Model.Road;
 
 public class Lane {
     public LaneSection route[];
+    public String label;
 
 
-    public Lane(LaneSection sections[])
+    public Lane(LaneSection sections[],String label)
     {
+        this.label=label;
         this.route=sections;
     }
 

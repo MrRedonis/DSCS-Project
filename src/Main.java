@@ -24,7 +24,8 @@ public class Main {
         dworzec.get(53).occupyCell(new Car(18,18));
         LaneSection[] ulica={dworzec, null,kopernika,null};
 
-        Lane pas=new Lane(ulica);
+        Lane pas=new Lane(ulica,"ulica");
+        for (int i=0;i<10;i++)
         pas.simulate();
 
 

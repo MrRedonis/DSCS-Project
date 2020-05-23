@@ -32,21 +32,29 @@ public class LaneSection {
             lane.add(new Cell(i));
         }
     }
+    public LaneSection(ArrayList<Cell> cells,String label, boolean islimited)
+    {
+        this.lane=cells;
+        this.waitingCar=new ArrayDeque<>();
+        this.outOfSection=new ArrayDeque<>();
+        this.islimited = islimited;
+        this.label = label;
+    }
 
     public void simulate() throws Exception {
         Boolean cond = true;
+
         for (int i = lane.size() - 1; i >= 0; i--) //dla każdej komórki
         {
-            // toMaxVelocity(i);
-
             if (lane.get(i).getOccupied()) {//jezeli jest zajeta
+                lane.get(i).car.maxvelocity=lane.get(i).maxVelocity;
                 cond = true;
                 toMaxVelocity(i);
                 while (cond) {
                     double plus = (lane.get(i).car.getVelocity()) / 18;// zmiana predkosci z km/h na kratki/s
                     if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 18 km/h
                         break;
-                    if(i+(int)plus>(lane.size()-1)) {
+                    if(i+(int)plus>(lane.size()-1)) { //pojazd wyjeżdża z sekcji
                         outOfSection.add(lane.get(i).car);
                         lane.get(i).freeCell();
                         cond=false;
@@ -56,9 +64,10 @@ public class LaneSection {
                     else if (lane.get(i + (int) plus).getOccupied()) {//jezeli komorka do ktroej chce pojechac jest zajeta
                         lane.get(i).car.decreaseVelocity(18); //zmniejsz predkosc o 1 komorke/s
 
-                    } else {
+                    } else {//zmien komorke
                         lane.get(i + (int) plus).occupyCell(lane.get(i).car); //zajmij komorke
                         lane.get(i).freeCell();// zwolnij poprzednia
+                        lane.get(i+(int)plus).car.maxvelocity=lane.get(i+(int)plus).maxVelocity;
                         cond = false;//nie powtarzaj
                     }
                 }
@@ -96,6 +105,17 @@ public class LaneSection {
             if (this.lane.get(i).getOccupied()) out.println(i+"  X");
             else out.println(i+" ");
         }
+    }
+    public int toNextCar(int index)
+    {
+        int distance=0;
+        for(int i=index+1;i<lane.size();i++)
+        {
+            if(lane.get(i).getOccupied())
+                return distance;
+            else ++distance;
+        }
+        return Integer.parseInt(null);
     }
 }
 

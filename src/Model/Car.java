@@ -2,14 +2,18 @@ package Model;
 
 import Model.Road.Cell;
 
+import java.util.Random;
+
 
 //zgodnie z założniami, każdy pojazd ma jakiś cel podróży
 public class Car {
+    Random generayor=new Random();
     int velocity;
+    //Cell cell;
     public int maxvelocity;//prędkość do której dąży pojazd
-    private int numberOfCellsToPass = 40;// liczba komórek do przejechania
+    private int numberOfCellsToPass = generayor.nextInt(20);// liczba komórek do przejechania
 
-    public Cell[][] neighbourhood;
+    //public Cell[][] neighbourhood;
     private int distanceToNextCarInFront = 0; // odległość od poprzedzającego samochodu; nie może być mniejsza od 0
 
     public Car(int velocity,int maxvelocity)

@@ -1,6 +1,10 @@
 import Model.Car;
+import Model.Road.Cell;
 import Model.Road.Lane;
 import Model.Road.LaneSection;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -10,30 +14,24 @@ public class Main {
         LaneSection dworzec = new LaneSection(0, 54, "Globus-Dworzec", false);
         LaneSection zyblikiewicza = new LaneSection(108, 120, "Kopernika-Zyblikiewicza", false);
 
-
-        for (int i = 1; i < 10; i++) {
-            kopernika.addCar(new Car(18, 18));
-            kopernika.addCar(new Car(54, 54));
-        }
-
-        for (int i = 1; i < 10; i++) {
-            kopernika.addCar(new Car(54, 54));
+//        LaneSection test=new LaneSection(new ArrayList<Cell>())
+        ArrayList<Cell>test=new ArrayList<>();
+        for (int i=0;i<10;i++) {
+            test.add(new Cell(i,0,0,36));
 
         }
-       // dworzec.
-        dworzec.get(53).occupyCell(new Car(18,18));
+        for (int i=10;i<20;i++) {
+            test.add(new Cell(i,0,0,18));
+
+        }
+        LaneSection test2=new LaneSection(test,"Test",false);
+        for (int i=0;i<20;i++) {
+        test2.addCar(new Car());
+        test2.simulate();
+          }
 
 
-        Lane pas=new Lane(new LaneSection[]{
-                dworzec,
-                null,
-                kopernika,
-                zyblikiewicza},"ulica");
-        for (int i=0;i<sim;i++)
-        pas.simulate();
 
-//kopernika.print(System.out);
-pas.simulate();
 
 
 

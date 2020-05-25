@@ -111,6 +111,10 @@ public class LaneSection {
         if ((this.lane.get(index).car.getVelocity() + 18) <= this.lane.get(index).car.maxvelocity) {
             this.lane.get(index).car.increaseVelocity(18);
         }
+        if((this.lane.get(index).car.getVelocity()>this.lane.get(index).car.maxvelocity))
+        {
+            this.lane.get(index).car.decreaseVelocity(18);
+        }
     }
 
     public void print(PrintStream out) {

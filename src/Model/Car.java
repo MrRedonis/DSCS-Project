@@ -8,8 +8,8 @@ import java.util.Random;
 //zgodnie z założniami, każdy pojazd ma jakiś cel podróży
 public class Car {
     Random generayor=new Random();
-    int velocity;
-    //Cell cell;
+    int velocity=18;
+
     public int maxvelocity;//prędkość do której dąży pojazd
     private int numberOfCellsToPass = generayor.nextInt(20);// liczba komórek do przejechania
 
@@ -20,6 +20,10 @@ public class Car {
     {
         this.velocity=velocity;
         this.maxvelocity=maxvelocity;
+    }
+    public Car()
+    {
+
     }
     //public Car(int velocity, int )
 

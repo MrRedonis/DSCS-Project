@@ -54,6 +54,9 @@ public class Car {
     {
         return maxvelocity;
     }
-
+public void setDistanceToNextCarInFront(int distance)
+{
+    distanceToNextCarInFront=distance;
+}
 
 }

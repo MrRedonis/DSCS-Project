@@ -67,12 +67,17 @@ public class LaneSection {
                     } else {//zmien komorke
                         lane.get(i + (int) plus).occupyCell(lane.get(i).car); //zajmij komorke
                         lane.get(i).freeCell();// zwolnij poprzednia
+                        lane.get(i+(int)plus).car.setDistanceToNextCarInFront(toNextCar(i+(int)plus));
+
                         lane.get(i+(int)plus).car.maxvelocity=lane.get(i+(int)plus).maxVelocity;
                         cond = false;//nie powtarzaj
                     }
+
                 }
+
             }
         }
+
         if (!waitingCar.isEmpty()) {
             if (!lane.get(0).getOccupied()) {
                 addCar(waitingCar.poll());
@@ -85,6 +90,15 @@ public class LaneSection {
     }
 
     public void addCar(Car car) throws Exception {
+
+        try {
+            lane.get(0).occupyCell(car);
+        } catch (Exception e) {
+            waitingCar.add(car);
+        }
+    }
+
+    public void keepDriving(Car car) throws Exception {
 
         try {
             lane.get(0).occupyCell(car);
@@ -109,17 +123,14 @@ public class LaneSection {
     public int toNextCar(int index)
     {
         int distance=0;
+        if(index==lane.size()-1) return 20;
         for(int i=index+1;i<lane.size();i++)
         {
             if(lane.get(i).getOccupied())
-                return distance;
+                return distance+1;
             else ++distance;
+            if(distance>=20)return 20;
         }
-        return Integer.parseInt(null);
+        return 20;
     }
 }
-
-
-
-
-

@@ -4,8 +4,8 @@ package Model.Road;
 //
 
 public class Lane {
-    public LaneSection route[];
-    public String label;
+    private LaneSection[] route;
+    private String label;
 
 
     public Lane(LaneSection sections[],String label)
@@ -15,10 +15,13 @@ public class Lane {
     }
 
     public void simulate() throws Exception {
-        for (LaneSection lane:route)
-        {
-            if(lane!=null)
-            lane.simulate();
+        for (int i = 0; i < route.length - 1; i++) {
+            if (route[i] != null) {
+                route[i].simulate();
+                if (!route[i].outOfSection.isEmpty() && route[i + 1] != null) {
+                    route[i + 1].keepDriving(route[i].outOfSection.poll());
+                }
+            }
         }
     }
 

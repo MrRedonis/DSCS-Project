@@ -17,7 +17,7 @@ public class Main {
 //        LaneSection test=new LaneSection(new ArrayList<Cell>())
         ArrayList<Cell>test=new ArrayList<>();
         for (int i=0;i<10;i++) {
-            test.add(new Cell(i,0,0,36));
+            test.add(new Cell(i,0,0,54));
 
         }
         for (int i=10;i<20;i++) {
@@ -25,15 +25,17 @@ public class Main {
 
         }
         LaneSection test2=new LaneSection(test,"Test",false);
-        for (int i=0;i<20;i++) {
-        test2.addCar(new Car());
-        test2.simulate();
+        Lane ulica=new Lane(new LaneSection[]{test2, zyblikiewicza},"Test",true);
+
+        for (int i=0;i<30;i++) {
+            ulica.getRoute(0).addCar(new Car());
+            ulica.simulate();
+        }
+
+        for (int i=0;i<sim;i++) {
+        //ulica.getRoute(0).addCar(new Car());
+        ulica.simulate();
           }
-
-
-
-
-
 
     }
 }

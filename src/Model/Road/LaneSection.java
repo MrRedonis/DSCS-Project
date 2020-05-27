@@ -47,9 +47,12 @@ public class LaneSection {
         for (int i = lane.size() - 1; i >= 0; i--) //dla każdej komórki
         {
             if (lane.get(i).getOccupied()) {//jezeli jest zajeta
+
                 lane.get(i).car.maxvelocity=lane.get(i).maxVelocity;
+
                 cond = true;
                 toMaxVelocity(i);
+               // if(lane.get(i).car.getDistanceToNextCarInFront()<3)lane.get(i).car.decreaseVelocity(18);
                 while (cond) {
                     double plus = (lane.get(i).car.getVelocity()) / 18;// zmiana predkosci z km/h na kratki/s
                     if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 18 km/h
@@ -65,6 +68,7 @@ public class LaneSection {
                         lane.get(i).car.decreaseVelocity(18); //zmniejsz predkosc o 1 komorke/s
 
                     } else {//zmien komorke
+
                         lane.get(i + (int) plus).occupyCell(lane.get(i).car); //zajmij komorke
                         lane.get(i).freeCell();// zwolnij poprzednia
                         lane.get(i+(int)plus).car.setDistanceToNextCarInFront(toNextCar(i+(int)plus));
@@ -131,7 +135,7 @@ public class LaneSection {
         for(int i=index+1;i<lane.size();i++)
         {
             if(lane.get(i).getOccupied())
-                return distance+1;
+                return distance;
             else ++distance;
             if(distance>=20)return 20;
         }

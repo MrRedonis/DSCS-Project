@@ -61,7 +61,6 @@ public class Way {
                 lane.setMaxspeed(Integer.parseInt(tags.get("maxspeed")));
             }
 
-
             lane_list.addLane(knots.get(i),knots.get(i+1),lane);
             if(!is_oneway){
                 Lane lane2 = new Lane(knot_list.getKnot(knots.get(i+1)),knot_list.getKnot(knots.get(i)));

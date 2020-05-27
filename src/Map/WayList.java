@@ -21,7 +21,7 @@ public class WayList {
     public LaneList buildLanes(KnotList knot_list){
         LaneList ll = new LaneList();
         for (Way way:this.ways) {
-            ll = way.makeLines(knot_list);
+            ll.addLaneList(way.makeLines(knot_list));
         }
         return ll;
     }

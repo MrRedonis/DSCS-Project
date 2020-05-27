@@ -34,7 +34,7 @@ public class ParseOSM {
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
 
                     Element element = (Element) node;
-
+                    if(element.getAttribute("action").equals("delete")) continue;
                     long id = Long.parseLong(element.getAttribute("id"));
                     double lat = Double.parseDouble(element.getAttribute("lat"));
                     double lon = Double.parseDouble(element.getAttribute("lon"));
@@ -67,6 +67,7 @@ public class ParseOSM {
 
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element element = (Element) node;
+                    if(element.getAttribute("action").equals("delete")) continue;
                     way.setId(Long.parseLong(element.getAttribute("id")));
                 }
 
@@ -109,10 +110,10 @@ public class ParseOSM {
         return l_lst;
     }
 
-    public WayList getWayList() {
+    /*public WayList getWayList() {
         return w_lst;
-    }
+    }*/
 }
 
 //Komendy Osmosis
-//osmosis --read-xml map.osm --tf accept-ways highway=* --used-node --write-xml map_r.osm  ## Wyciąganie wszystkich dróg i powiązanych z nimi węzłów
+//osmosis --read-xml map_z_busami.osm --tf accept-ways highway=* --used-node --write-xml map_r.osm  ## Wyciąganie wszystkich dróg i powiązanych z nimi węzłów

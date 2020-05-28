@@ -58,10 +58,16 @@ public class LaneSection {
                     if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 18 km/h
                         break;
                     if(i+(int)plus>(lane.size()-1)) { //pojazd wyjeżdża z sekcji
-                        outOfSection.add(lane.get(i).car);
-                        lane.get(i).freeCell();
-                        cond=false;
-
+                        lane.get(i).car.decreaseSection();
+                     //   if(lane.get(i).car.getNumberOfSectionToPass()==0)
+                       // {
+                        //lane.get(i).freeCell();
+                        //}
+                        //else {
+                            outOfSection.add(lane.get(i).car);
+                            lane.get(i).freeCell();
+                            cond = false;
+                        //}
                     }
 
                     else if (lane.get(i + (int) plus).getOccupied()) {//jezeli komorka do ktroej chce pojechac jest zajeta

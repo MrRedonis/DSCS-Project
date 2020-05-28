@@ -11,7 +11,7 @@ public class Car {
     int velocity=18;
 
     public int maxvelocity;//prędkość do której dąży pojazd
-    private int numberOfCellsToPass = generayor.nextInt(20);// liczba komórek do przejechania
+    private int numberOfSectionToPass = generayor.nextInt(20);// liczba komórek do przejechania
 
     //public Cell[][] neighbourhood;
     private int distanceToNextCarInFront = 0; // odległość od poprzedzającego samochodu; nie może być mniejsza od 0
@@ -20,6 +20,13 @@ public class Car {
     {
         this.velocity=velocity;
         this.maxvelocity=maxvelocity;
+    }
+   public void decreaseSection(){
+        numberOfSectionToPass--;
+    }
+    public int getNumberOfSectionToPass()
+    {
+        return numberOfSectionToPass;
     }
     public Car()
     {

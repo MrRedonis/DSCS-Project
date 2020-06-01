@@ -7,7 +7,7 @@ import Model.Car;
 //Klasa Lane będzie składać się z
 public class Cell {
     private boolean occupied; //czy komórka jest zajęta
-    Car car; //zamochód znajduje się na komórce
+    public Car car; //zamochód znajduje się na komórce
     public static double measure=5; //wielkosc komorki
     private int number;
     int maxVelocity=54;
@@ -39,7 +39,7 @@ public class Cell {
         this.occupied=occupied;
 
     }
-    boolean getOccupied()
+   public boolean getOccupied()
     {
         return occupied;
     }

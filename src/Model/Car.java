@@ -2,6 +2,7 @@ package Model;
 
 import Model.Road.Cell;
 
+import java.awt.*;
 import java.util.Random;
 
 
@@ -9,6 +10,7 @@ import java.util.Random;
 public class Car {
     Random generayor=new Random();
     int velocity=18;
+   public Color color= new Color(generayor.nextInt(255),generayor.nextInt(255),generayor.nextInt(255));
 
     public int maxvelocity;//prędkość do której dąży pojazd
     private int numberOfSectionToPass = generayor.nextInt(20);// liczba komórek do przejechania

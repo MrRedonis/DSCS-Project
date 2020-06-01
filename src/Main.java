@@ -1,8 +1,10 @@
 import Model.Car;
 import Model.Road.Cell;
 import Model.Road.Lane;
+
 import Model.Road.LaneSection;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,6 +38,13 @@ public class Main {
         //ulica.getRoute(0).addCar(new Car());
         ulica.simulate();
           }
+
+        SimulateFrame frame=new SimulateFrame(ulica);
+        frame.setSize(700, 700);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(true);
+        frame.setVisible(true);
 
     }
 }

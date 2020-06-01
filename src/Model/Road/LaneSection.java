@@ -19,6 +19,9 @@ public class LaneSection {
     Queue<Car> waitingCar;
     Queue<Car> outOfSection;
 
+    public ArrayList<Cell> getLane(){
+        return lane;
+    }
 
 
     public LaneSection(int from, int to, String label, boolean islimited) {
@@ -64,6 +67,7 @@ public class LaneSection {
                         //lane.get(i).freeCell();
                         //}
                         //else {
+                        if(lane.get(i).car.getNumberOfSectionToPass()!=0)
                             outOfSection.add(lane.get(i).car);
                             lane.get(i).freeCell();
                             cond = false;

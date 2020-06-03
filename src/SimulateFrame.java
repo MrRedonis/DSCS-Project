@@ -24,17 +24,29 @@ public class SimulateFrame extends JFrame {
         panel.setLayout(new BorderLayout());
         JPanel opt = new JPanel();
         JButton start = new JButton("Start");
-
-        start.addActionListener(p -> {
-            System.out.println("start");
+        JButton stop = new JButton("Stop");
+        JButton plus = new JButton("Plus");
+        plus.addActionListener(p-> {
+            try {
+                simpanel.onPlus();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         });
+        opt.add(plus);
+
+
+        start.addActionListener(p -> simpanel.onStart());
+
+
+        start.addActionListener(p -> { start.setEnabled(false);stop.setEnabled(true); });
         opt.add(start);
 
-        JButton stop = new JButton("Stop");
+        stop.addActionListener(p->simpanel.onStop());
+        stop.setEnabled(false);
 
-        stop.addActionListener(p -> {
-            System.out.println("Stop");
-        });
+        stop.addActionListener(p->{stop.setEnabled(false);start.setEnabled(true);});
+
         opt.add(stop);
 
         panel.add(opt, BorderLayout.NORTH);
@@ -67,7 +79,7 @@ public class SimulateFrame extends JFrame {
 
         for (int i=0;i<30;i++) {
             ulica.getRoute(0).addCar(new Car());
-            ulica.simulate();
+           // ulica.simulate();
         }
 
         for (int i=0;i<sim;i++) {
@@ -77,7 +89,7 @@ public class SimulateFrame extends JFrame {
 
         {
             SimulateFrame frame = new SimulateFrame(ulica);
-            frame.setSize(700, 700);
+            frame.setSize(900, 900);
             frame.setLocationRelativeTo(null);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setResizable(true);

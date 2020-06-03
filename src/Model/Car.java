@@ -34,6 +34,10 @@ public class Car {
     {
 
     }
+    public Car(int maxvelocity)
+    {
+        this.maxvelocity=maxvelocity;
+    }
     //public Car(int velocity, int )
 
     public void decreaseVelocity(int velocityChange) // zgodnie z założeniami modelu, jezeli v+dv<0 to v=0

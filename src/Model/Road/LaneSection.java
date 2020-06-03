@@ -51,7 +51,7 @@ public class LaneSection {
         {
             if (lane.get(i).getOccupied()) {//jezeli jest zajeta
 
-                lane.get(i).car.maxvelocity=lane.get(i).maxVelocity;
+                lane.get(i).car.maxvelocity=lane.get(i).getMaxVelocity();
 
                 cond = true;
                 toMaxVelocity(i);
@@ -62,16 +62,17 @@ public class LaneSection {
                         break;
                     if(i+(int)plus>(lane.size()-1)) { //pojazd wyjeżdża z sekcji
                         lane.get(i).car.decreaseSection();
-                     //   if(lane.get(i).car.getNumberOfSectionToPass()==0)
-                       // {
-                        //lane.get(i).freeCell();
-                        //}
-                        //else {
+                        if(lane.get(i).car.getNumberOfSectionToPass()==0)
+                        {
+                        lane.get(i).freeCell();
+                       cond=false;
+                        }
+                        else {
                         if(lane.get(i).car.getNumberOfSectionToPass()!=0)
                             outOfSection.add(lane.get(i).car);
                             lane.get(i).freeCell();
                             cond = false;
-                        //}
+                        }
                     }
 
                     else if (lane.get(i + (int) plus).getOccupied()) {//jezeli komorka do ktroej chce pojechac jest zajeta
@@ -83,7 +84,7 @@ public class LaneSection {
                         lane.get(i).freeCell();// zwolnij poprzednia
                         lane.get(i+(int)plus).car.setDistanceToNextCarInFront(toNextCar(i+(int)plus));
 
-                        lane.get(i+(int)plus).car.maxvelocity=lane.get(i+(int)plus).maxVelocity;
+                        lane.get(i+(int)plus).car.maxvelocity=lane.get(i+(int)plus).getMaxVelocity();
                         cond = false;//nie powtarzaj
                     }
 
@@ -145,7 +146,7 @@ public class LaneSection {
         for(int i=index+1;i<lane.size();i++)
         {
             if(lane.get(i).getOccupied())
-                return distance;
+                return distance+1;
             else ++distance;
             if(distance>=20)return 20;
         }

@@ -57,6 +57,10 @@ public class Cell {
         car=null;
     }
 
+    public int getMaxVelocity(){
+        return maxVelocity;
+    }
+
 
 
 }

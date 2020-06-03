@@ -1,6 +1,7 @@
 package Map;
 
 import javafx.util.Pair;
+
 import java.util.HashMap;
 
 public class LaneList {

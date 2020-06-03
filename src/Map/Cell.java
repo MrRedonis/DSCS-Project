@@ -1,6 +1,5 @@
 package Map;
 
-import Model.Car;
 import javafx.util.Pair;
 
 public class Cell {
@@ -36,16 +35,27 @@ public class Cell {
         return occupied;
     }
 
-    public void occupyCell( Car car) throws Exception {
+    public void occupyCell( Car car)  {
         if(!getOccupied()) {
             setOccupied();
             setCar(car);
         }
-        else throw new Exception("Już zajęte");
     }
     void freeCell()
     {
         setNotOccupied();
         setCar(null);
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public int getMaxVelocity() {
+        return maxVelocity;
+    }
+
+    public void setMaxVelocity(int maxVelocity) {
+        this.maxVelocity = maxVelocity;
     }
 }

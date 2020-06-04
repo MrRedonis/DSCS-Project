@@ -1,7 +1,9 @@
 package Map;
 
 import javafx.util.Pair;
+
 import java.util.HashMap;
+import java.util.Map;
 
 public class LaneList {
     private HashMap<Pair<Long,Long>, Lane> lanes = new HashMap<>();
@@ -27,5 +29,13 @@ public class LaneList {
     public LaneList addLaneList(LaneList ll){
         ll.getLanes().forEach(this.lanes::putIfAbsent);
         return this;
+    }
+
+    public void buildMaxSpeed(){
+        for(Map.Entry<Pair<Long,Long>, Lane> entry : lanes.entrySet()) {
+            for (Cell cell:entry.getValue().getCells()) {
+                cell.setMaxVelocity(entry.getValue().getMaxspeed());
+            }
+        }
     }
 }

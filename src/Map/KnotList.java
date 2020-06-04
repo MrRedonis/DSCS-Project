@@ -64,4 +64,13 @@ public class KnotList {
         int randomNum = ThreadLocalRandom.current().nextInt(1, knots.get(knot.getId()).size() + 1);
         return knots.get(knot.getId()).get(randomNum);
     }
+
+    public Long getRandomNextKnotId(long id){//Zwróc id sąsiedniego węzła który nie jest węzłem id, jeśli nie ma takiego to zwróc id
+        int randomNum;
+        if(knots.get(id).size()>1){
+            randomNum = ThreadLocalRandom.current().nextInt(1, knots.get(id).size());
+            return knots.get(id).get(randomNum).getId();
+        }
+        else return id;
+    }
 }

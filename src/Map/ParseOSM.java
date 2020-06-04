@@ -1,5 +1,6 @@
 package Map;
 
+import javafx.util.Pair;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -8,7 +9,11 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class ParseOSM {
     private KnotList kn_lst;
@@ -100,6 +105,7 @@ public class ParseOSM {
     private void build(){
         this.kn_lst = w_lst.buildKnotsRelations(kn_lst);
         this.l_lst = w_lst.buildLanes(kn_lst);
+        this.l_lst.buildMaxSpeed();
     }
 
     public KnotList getKnotList() {
@@ -110,9 +116,32 @@ public class ParseOSM {
         return l_lst;
     }
 
-    /*public WayList getWayList() {
-        return w_lst;
-    }*/
+    public void simulate() throws Exception {
+        for (Map.Entry<Pair<Long, Long>, Lane> entry : l_lst.getLanes().entrySet()) {
+            entry.getValue().simulate();
+            while (!entry.getValue().outOfSection.isEmpty()){
+                Car car = entry.getValue().outOfSection.poll();
+                if(kn_lst.getRandomNextKnotId(entry.getKey().getValue()) != entry.getValue().getEnd().getId()){//Jeśli istnieje sąsiedni węzeł do ostatniego węzłą lane'a
+                    long knot_id = kn_lst.getRandomNextKnotId(entry.getKey().getValue());//Pobierz id sąsiedniego węzła
+                    l_lst.getLane(entry.getKey().getValue(),knot_id).keepDriving(car);//Dodaj pojazd do kolejnego lane'a
+                }
+            }
+        }
+    }
+
+    public void addCars(int numCars) {
+        ArrayList<ArrayList<Knot>> knot_array = kn_lst.getKnotsAsArray();
+        Random random = new Random();
+        for(int i=0;i<numCars;i++){
+            long randomNode;
+            long randomNodeNeighbour;
+            do {
+                randomNode = ThreadLocalRandom.current().nextInt(0,knot_array.size());
+            }while (knot_array.get((int) randomNode).size()<2);
+            randomNodeNeighbour =  ThreadLocalRandom.current().nextInt(1,knot_array.get((int) randomNode).size());
+            l_lst.getLane(knot_array.get((int) randomNode).get(0).getId(),knot_array.get((int) randomNode).get((int) randomNodeNeighbour).getId()).addCar();
+        }
+    }
 }
 
 //Komendy Osmosis

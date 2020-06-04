@@ -14,7 +14,7 @@ public class Lane {
     private Knot begin;
     private Knot end;
     private double length;
-    private int maxspeed;
+    private int maxspeed = 50;
     private int cell_size = 5;
     private ArrayList<Cell> cells = new ArrayList<Cell>();
     private static double ROUND = 0.4; //Zaokrąglenie do liczby komórek
@@ -29,8 +29,6 @@ public class Lane {
         this.length = geoToMeter();
         makeCells();
     }
-
-    public Lane() {}
 
     public int getMaxspeed() {
         return maxspeed;
@@ -53,10 +51,6 @@ public class Lane {
         return length;
     }
 
-    /*public int getLanes() {
-        return lanes;
-    }*/
-
     private void makeCells()
     {
         int count = 0;
@@ -70,20 +64,6 @@ public class Lane {
             cells.add(new Cell(maxspeed,begin.getId(),end.getId(),i));
         }
     }
-
-    public ArrayList<Cell> getCells() {
-        return cells;
-    }
-
-    public int getCell_size() {
-        return cell_size;
-    }
-
-    public Cell getCell(int index){
-        return cells.get(index);
-    }
-
-    //###################################################################################
 
     public void simulate() throws Exception {
         boolean cond = true;
@@ -140,22 +120,9 @@ public class Lane {
         }
     }
 
-    /*public Model.Road.Cell get(int index) {
-        return lane.get(index);
-    }*/
-
     public void addCar() {
         addCar(new Car(0,maxspeed));
     }
-
-    /*public void addCar(Car car) throws Exception {
-
-        try {
-            cells.get(0).occupyCell(car);
-        } catch (Exception e) {
-            waitingCar.add(car);
-        }
-    }*/
 
     public void addCar(Car car) {
         if(cells.get(0).getOccupied()){
@@ -166,7 +133,7 @@ public class Lane {
         }
     }
 
-    public void keepDriving(Car car) throws Exception {
+    public void keepDriving(Car car) {
         addCar(car);
     }
 
@@ -203,5 +170,9 @@ public class Lane {
 
     public Knot getEnd() {
         return end;
+    }
+
+    public ArrayList<Cell> getCells() {
+        return cells;
     }
 }

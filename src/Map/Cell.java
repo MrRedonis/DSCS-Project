@@ -3,7 +3,7 @@ package Map;
 import javafx.util.Pair;
 
 public class Cell {
-    public static double measure=5;
+    public static double measure = 5;
     private int number;
     private int maxVelocity;
     private boolean occupied = false;

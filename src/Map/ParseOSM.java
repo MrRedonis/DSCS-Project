@@ -105,6 +105,7 @@ public class ParseOSM {
     private void build(){
         this.kn_lst = w_lst.buildKnotsRelations(kn_lst);
         this.l_lst = w_lst.buildLanes(kn_lst);
+        this.l_lst.buildMaxSpeed();
     }
 
     public KnotList getKnotList() {
@@ -138,14 +139,9 @@ public class ParseOSM {
                 randomNode = ThreadLocalRandom.current().nextInt(0,knot_array.size());
             }while (knot_array.get((int) randomNode).size()<2);
             randomNodeNeighbour =  ThreadLocalRandom.current().nextInt(1,knot_array.get((int) randomNode).size());
-            //Lane lane_copy = l_lst.getLane(knot_array.get((int) randomNode).get(0).getId(),knot_array.get((int) randomNode).get((int) randomNodeNeighbour).getId());
             l_lst.getLane(knot_array.get((int) randomNode).get(0).getId(),knot_array.get((int) randomNode).get((int) randomNodeNeighbour).getId()).addCar();
         }
     }
-
-    /*public WayList getWayList() {
-        return w_lst;
-    }*/
 }
 
 //Komendy Osmosis

@@ -9,7 +9,7 @@ public class MapBuild {
         for(int i=0;i<20;i++){
             data.simulate();
             TimeUnit.SECONDS.sleep(1);
-            //System.out.print(i+" ");
+            System.out.print(i+" ");
         }
     }
 }

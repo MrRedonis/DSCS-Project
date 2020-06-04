@@ -26,6 +26,12 @@ public class SimulateFrame extends JFrame {
         JButton start = new JButton("Start");
         JButton stop = new JButton("Stop");
         JButton plus = new JButton("Plus");
+        JButton next=new JButton("Next Section");
+        JButton previous=new JButton("Previous Section");
+        next.addActionListener(p->{simpanel.onNext();});
+        previous.addActionListener(p->{simpanel.onPrevious();});
+        opt.add(next);
+        opt.add(previous);
         plus.addActionListener(p-> {
             try {
                 simpanel.onPlus();
@@ -63,29 +69,8 @@ public class SimulateFrame extends JFrame {
         LaneSection dworzec = new LaneSection(0, 54, "Globus-Dworzec", false);
         LaneSection zyblikiewicza = new LaneSection(108, 120, "Kopernika-Zyblikiewicza", false);
 
+Lane ulica=new Lane(null,"test",true);
 
-
-        ArrayList<Cell> test=new ArrayList<>();
-        for (int i=0;i<10;i++) {
-            test.add(new Cell(i,0,0,54));
-
-        }
-        for (int i=10;i<20;i++) {
-            test.add(new Cell(i,0,0,18));
-
-        }
-        LaneSection test2=new LaneSection(test,"Test",false);
-        Lane ulica=new Lane(new LaneSection[]{test2, zyblikiewicza},"Test",true);
-
-        for (int i=0;i<30;i++) {
-            ulica.getRoute(0).addCar(new Car());
-           // ulica.simulate();
-        }
-
-        for (int i=0;i<sim;i++) {
-            //ulica.getRoute(0).addCar(new Car());
-            ulica.simulate();
-        }
 
         {
             SimulateFrame frame = new SimulateFrame(ulica);

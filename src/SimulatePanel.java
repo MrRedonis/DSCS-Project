@@ -17,23 +17,41 @@ public class SimulatePanel extends JPanel{
         Random rand=new Random();
 
         Graphics2D g2= (Graphics2D)g;
-
-        for (int i=0;i<lane.getRoute(0).getLane().size()-1;i++)
-        {
-            if(lane.getRoute(0).getLane().get(i).getOccupied())
-            {
-                g2.setColor(lane.getRoute(0).getLane().get(i).car.color);
-                g2.fillRect(i*20,20,20,40);
+        if(lane.getRoute(index)!=null) {
+            for (int i = 0; i < lane.getRoute(index).getLane().size() - 1; i++) {
+                if (lane.getRoute(index).getLane().get(i).getOccupied()) {
+                    g2.setColor(lane.getRoute(index).getLane().get(i).car.color);
+                    g2.fillRect(i * 20, 100, 20, 40);
+                } else {
+                    if (lane.getRoute(index).getLane().get(i).getMaxVelocity() == 18)
+                        g2.setColor(Color.lightGray);
+                    else if (lane.getRoute(index).getLane().get(i).getMaxVelocity() == 36)
+                        g2.setColor(Color.GRAY);
+                    else
+                        g2.setColor(Color.darkGray);
+                    g2.fillRect(i * 20, 100, 20, 40);
+                }
             }
-            else{
-                if(lane.getRoute(0).getLane().get(i).getMaxVelocity()==18)
-                g2.setColor(Color.lightGray);
-                else if (lane.getRoute(0).getLane().get(i).getMaxVelocity()==36)
+        }
+
+        if(lane2.getRoute(index)!=null) {
+
+        for (int i=lane2.getRoute(index).getLane().size()-1;i>=0;i--) {
+            int j = lane2.getRoute(index).getLane().size() - 1 - i;
+            if (lane2.getRoute(index).getLane().get(i).getOccupied()) {
+                g2.setColor(lane2.getRoute(index).getLane().get(i).car.color);
+                g2.fillRect(j * 20, 160, 20, 40);
+            } else {
+                if (lane2.getRoute(index).getLane().get(i).getMaxVelocity() == 18)
+                    g2.setColor(Color.lightGray);
+                else if (lane.getRoute(index).getLane().get(i).getMaxVelocity() == 36)
                     g2.setColor(Color.GRAY);
                 else
                     g2.setColor(Color.darkGray);
-                g2.fillRect(i*20,20,20,40);
+                g2.fillRect(j * 20, 160, 20, 40);
             }
+
+        }
         }
 
 
@@ -41,6 +59,10 @@ public class SimulatePanel extends JPanel{
 
 
     Lane lane;
+    Lane lane2;
+    int index=0;
+
+
 
     class AnimationThread extends Thread {
         boolean sus = true;
@@ -48,9 +70,18 @@ public class SimulatePanel extends JPanel{
         public void pause() {
             sus = true;
         }
-
+        public void nextSection()
+        {
+            index++;
+        }
+        public void previousSection()
+        {
+            if(index!=0)
+            index--;
+        }
         public void addCar() throws Exception {
-            lane.getRoute(0).addCar(new Car());
+            lane.getRoute(index).addCar(new Car());
+            lane2.getRoute(index).addCar(new Car());
         }
 
         public synchronized void stoppasue() {
@@ -61,6 +92,7 @@ public class SimulatePanel extends JPanel{
         public void run() {
             while (true) {
                 try {
+                    lane2.simulate();
                     lane.simulate();
                 } catch (Exception e) {
                     System.out.println("Błąd");
@@ -80,7 +112,7 @@ public class SimulatePanel extends JPanel{
                     }
                 }
                 try{
-                    Thread.sleep(500);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -93,6 +125,17 @@ public class SimulatePanel extends JPanel{
         System.out.println("Start or resume animation thread");
         // anim.start();
         anim.stoppasue();
+    }
+
+    void onNext()
+    {
+        System.out.println("Next section");
+        anim.nextSection();
+    }
+
+    public void onPrevious() {
+        System.out.println("Previous Section");
+        anim.previousSection();
     }
 
     void onStop(){
@@ -109,19 +152,28 @@ public class SimulatePanel extends JPanel{
     SimulatePanel(int height,int width) throws Exception {
 
         ArrayList<Cell> test=new ArrayList<>();
+        ArrayList<Cell> test5=new ArrayList<>();
         ArrayList<Cell>test3=new ArrayList<>();
 
         for (int i=0;i<10;i++) {
             test.add(new Cell(i,0,0,54));
             test3.add(new Cell(i,0,0,72));
+            test5.add(new Cell(i,0,0,36));
 
         }
-     /*   for (int i=10;i<25;i++) {
+        for(int i=0;i<5;i++)
+        {
+            test5.add(new Cell(i,0,0,0));
+        }
+       for (int i=10;i<25;i++) {
             test.add(new Cell(i,0,0,18));
+            test5.add(new Cell(i,0,0,18));
 
         }
         for (int i=10;i<20;i++) {
             test.add(new Cell(i,0,0,54));
+            test5.add(new Cell(i,0,0,54));
+            test5.add(new Cell(i,0,0,54));
 
         }
 
@@ -134,13 +186,15 @@ public class SimulatePanel extends JPanel{
 
         }
 
-      */
+
 
         LaneSection test2=new LaneSection(test,"Test",false);
+        LaneSection test4=new LaneSection(test5,"test",false);
 
 
 int cars=0;
         this.lane=new Lane(new LaneSection[]{test2,new LaneSection(test3,"Test",false)},"Test",true);
+        this.lane2=new Lane(new LaneSection[]{test4,new LaneSection(test3,"Test",false)},"Test",true);
         for (int i=0;i<cars;i++) {
             lane.getRoute(0).addCar(new Car());}
 

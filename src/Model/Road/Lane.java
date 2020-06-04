@@ -9,6 +9,9 @@ public class Lane {
     boolean isInterconnected;
 
     public LaneSection getRoute(int index) {
+        if(route.length-1<index)
+            return null;
+
         return route[index];
 
     }

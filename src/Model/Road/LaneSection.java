@@ -50,8 +50,9 @@ public class LaneSection {
         for (int i = lane.size() - 1; i >= 0; i--) //dla każdej komórki
         {
             if (lane.get(i).getOccupied()) {//jezeli jest zajeta
-
+                if(lane.get(i).car.setmax)
                 lane.get(i).car.maxvelocity=lane.get(i).getMaxVelocity();
+                lane.get(i).car.setmax=true;
 
                 cond = true;
                 toMaxVelocity(i);
@@ -129,6 +130,11 @@ public class LaneSection {
         if((this.lane.get(index).car.getVelocity()>this.lane.get(index).car.maxvelocity))
         {
             this.lane.get(index).car.decreaseVelocity(18);
+        }
+        if(this.lane.get(index).car.maxvelocity==0)
+        {
+            this.lane.get(index).car.setmax=false;
+            this.lane.get(index).car.maxvelocity=18;
         }
     }
 

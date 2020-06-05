@@ -1,3 +1,4 @@
+import Map.ParseOSM;
 import Model.Car;
 import Model.Road.Cell;
 import Model.Road.Lane;
@@ -18,7 +19,8 @@ public class SimulatePanel extends JPanel{
 
         Graphics2D g2= (Graphics2D)g;
         if(lane.getRoute(index)!=null) {
-            for (int i = 0; i < lane.getRoute(index).getLane().size() - 1; i++) {
+            //data.getLaneList().getLanes().
+        for (int i = 0; i < lane.getRoute(index).getLane().size() - 1; i++) {
                 if (lane.getRoute(index).getLane().get(i).getOccupied()) {
                     g2.setColor(lane.getRoute(index).getLane().get(i).car.color);
                     g2.fillRect(i * 20, 100, 20, 40);
@@ -61,7 +63,7 @@ public class SimulatePanel extends JPanel{
     Lane lane;
     Lane lane2;
     int index=0;
-
+    ParseOSM data=new ParseOSM();
 
 
     class AnimationThread extends Thread {
@@ -94,6 +96,7 @@ public class SimulatePanel extends JPanel{
                 try {
                     lane2.simulate();
                     lane.simulate();
+                    data.simulate();
                 } catch (Exception e) {
                     System.out.println("Błąd");
                     e.printStackTrace();

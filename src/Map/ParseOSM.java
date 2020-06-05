@@ -20,7 +20,7 @@ public class ParseOSM {
     private WayList w_lst;
     private LaneList l_lst;
 
-    ParseOSM() {
+    public ParseOSM() {
         try {
             File inputFile = new File("map.osm");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();

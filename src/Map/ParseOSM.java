@@ -117,6 +117,7 @@ public class ParseOSM {
     }
 
     public void simulate() throws Exception {
+        System.out.println("Simulate");
         for (Map.Entry<Pair<Long, Long>, Lane> entry : l_lst.getLanes().entrySet()) {
             entry.getValue().simulate();
             while (!entry.getValue().outOfSection.isEmpty()){

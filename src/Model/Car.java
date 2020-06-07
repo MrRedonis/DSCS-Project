@@ -8,8 +8,8 @@ import java.util.Random;
 
 //zgodnie z założniami, każdy pojazd ma jakiś cel podróży
 public class Car {
-    Random generayor=new Random();
-    int velocity=18;
+    private Random generayor=new Random();
+    private int velocity=18;
     public boolean setmax=true;
    public Color color= new Color(generayor.nextInt(255),generayor.nextInt(255),generayor.nextInt(255));
 

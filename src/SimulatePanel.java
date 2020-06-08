@@ -23,6 +23,9 @@ public class SimulatePanel extends JPanel {
 
         Graphics2D g2 = (Graphics2D) g;
 
+        g2.setColor(Color.BLACK);
+        g2.setFont(new Font("Serif", Font.PLAIN, 24));
+        g2.drawString("Symulacja ruchu samochodowego na I Obwodnicy Krakowa",100,70);
         for (Map.Entry<Pair<Long, Long>, Lane> entry : data.getLaneList().getLanes().entrySet()) {
             g2.setColor(Color.darkGray);
             Point begin = new Point((int)((entry.getValue().getBegin().getLon()*size-lon*size)),(int)((entry.getValue().getBegin().getLat()*size-lat*size)));
@@ -73,7 +76,7 @@ public class SimulatePanel extends JPanel {
                 try {
                     data.simulate();
                 } catch (Exception e) {
-                    System.out.println("Błąd");
+                    System.out.println("Błąd w symulacji");
                     e.printStackTrace();
                 }
 
@@ -90,7 +93,7 @@ public class SimulatePanel extends JPanel {
                     }
                 }
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

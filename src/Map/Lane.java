@@ -76,23 +76,25 @@ public class Lane {
 
                 cond = true;
                 toMaxVelocity(i);
-                // if(lane.get(i).car.getDistanceToNextCarInFront()<3)lane.get(i).car.decreaseVelocity(18);
+                cells.get(i).getCar().init--;
+                if(cells.get(i).getCar().init%4==0)cells.get(i).getCar().decreaseVelocity(18);
                 while (cond) {
                     double plus = (double) (cells.get(i).getCar().getVelocity()) / 18;// zmiana predkosci z km/h na kratki/s
                     if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 18 km/h
                         break;
                     if(i+(int)plus>(cells.size()-1)) { //pojazd wyjeżdża z sekcji
                         cells.get(i).getCar().decreaseSection();
-                        //   if(lane.get(i).car.getNumberOfSectionToPass()==0)
-                        // {
-                        //lane.get(i).freeCell();
-                        //}
-                        //else {
+                          if(cells.get(i).getCar().getNumberOfSectionToPass()==0)
+                         {
+                        cells.get(i).freeCell();
+                        cond=false;
+                        }
+                        else {
                         if(cells.get(i).getCar().getNumberOfSectionToPass()!=0)
                             outOfSection.add(cells.get(i).getCar());
                         cells.get(i).freeCell();
                         cond = false;
-                        //}
+                        }
                     }
 
                     else if (cells.get(i + (int) plus).getOccupied()) {//jezeli komorka do ktroej chce pojechac jest zajeta

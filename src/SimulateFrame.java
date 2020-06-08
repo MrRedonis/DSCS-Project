@@ -13,7 +13,7 @@ public class SimulateFrame extends JFrame {
 
         JButton start = new JButton("Start");
         JButton stop = new JButton("Stop");
-        JButton plus = new JButton("Plus");
+        JButton plus = new JButton("Add 50 cars");
 
         plus.addActionListener(p-> {
             try {

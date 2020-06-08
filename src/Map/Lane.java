@@ -168,6 +168,10 @@ public class Lane {
         return 20;
     }
 
+    public Knot getBegin() {
+        return begin;
+    }
+
     public Knot getEnd() {
         return end;
     }

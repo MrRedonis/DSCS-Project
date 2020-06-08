@@ -106,7 +106,7 @@ public class ParseOSM {
         this.kn_lst = w_lst.buildKnotsRelations(kn_lst);
         this.l_lst = w_lst.buildLanes(kn_lst);
         this.l_lst.buildMaxSpeed();
-        this.w_lst.buildLanes2(kn_lst,l_lst);
+        //this.w_lst.buildLanes2(kn_lst,l_lst);
     }
 
     public KnotList getKnotList() {

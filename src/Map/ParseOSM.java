@@ -22,7 +22,7 @@ public class ParseOSM {
 
     public ParseOSM() {
         try {
-            File inputFile = new File("map.osm");
+            File inputFile = new File("map_obwodnica.osm");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             dbFactory.setCoalescing(true);
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();

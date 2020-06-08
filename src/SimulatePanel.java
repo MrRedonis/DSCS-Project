@@ -36,12 +36,12 @@ public class SimulatePanel extends JPanel {
             double ss2 = linLen2/entry.getValue().getCells().size();
             for (int i = 0; i < entry.getValue().getCells().size() - 1; i++) {
                 if (entry.getValue().getCells().get(i).getOccupied()){
-                    g2.setColor(Color.green);
-                    g2.fillOval((int)(odstep+begin.x+ss*i),(int)(odstep+begin.y+retA*i*ss2),5,5);
+                    g2.setColor(entry.getValue().getCells().get(i).getCar().color);
+                    g2.fillOval((int)(odstep+begin.x+ss*i),(int)(odstep+begin.y+retA*i*ss2),7,7);
                 }
                 else {
                     g2.setColor(Color.gray);
-                    g2.fillOval((int)(odstep+begin.x+ss*i),(int)(odstep+begin.y+retA*i*ss2),5,5);
+                    g2.fillOval((int)(odstep+begin.x+ss*i),(int)(odstep+begin.y+retA*i*ss2),7,7);
                 }
             }
         }
@@ -71,7 +71,7 @@ public class SimulatePanel extends JPanel {
         }
 
         public void addCar() throws Exception {
-            data.addCars(100);
+            data.addCars(50);
         }
 
         public synchronized void stoppasue() {

@@ -5,7 +5,7 @@
   <node id='30372085' action='delete' timestamp='2016-05-15T14:51:28Z' uid='690673' user='Sto-Sto' visible='true' version='8' changeset='39332536' lat='50.0576389' lon='19.9307172' />
   <node id='30372087' action='delete' timestamp='2013-08-15T12:26:16Z' uid='693154' user='Władysław Komorek' visible='true' version='8' changeset='17358603' lat='50.0593829' lon='19.9349541' />
   <node id='30372088' action='delete' timestamp='2013-08-14T22:23:34Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='17352732' lat='50.0592612' lon='19.936793' />
-  <node id='30372096' timestamp='2014-07-28T23:30:49Z' uid='693154' user='Władysław Komorek' visible='true' version='9' changeset='24412780' lat='50.0589162' lon='19.9412015' />
+  <node id='30372096' action='delete' timestamp='2014-07-28T23:30:49Z' uid='693154' user='Władysław Komorek' visible='true' version='9' changeset='24412780' lat='50.0589162' lon='19.9412015' />
   <node id='30375871' action='delete' timestamp='2016-03-13T14:00:11Z' uid='690673' user='Sto-Sto' visible='true' version='10' changeset='37800500' lat='50.0624808' lon='19.941007' />
   <node id='30375873' action='delete' timestamp='2012-03-05T02:28:15Z' uid='164910' user='ppece' visible='true' version='7' changeset='10875894' lat='50.0632519' lon='19.941551' />
   <node id='30375877' action='delete' timestamp='2014-07-31T18:33:47Z' uid='693154' user='Władysław Komorek' visible='true' version='9' changeset='24468240' lat='50.063715' lon='19.9419082' />
@@ -16,7 +16,7 @@
     <tag k='tactile_paving' v='no' />
   </node>
   <node id='30375924' action='delete' timestamp='2014-08-05T21:53:39Z' uid='693154' user='Władysław Komorek' visible='true' version='9' changeset='24565254' lat='50.0581435' lon='19.9380029' />
-  <node id='30375949' timestamp='2018-02-01T12:33:46Z' uid='3376721' user='Yunkers' visible='true' version='10' changeset='55964490' lat='50.0545596' lon='19.9383639' />
+  <node id='30375949' action='delete' timestamp='2018-02-01T12:33:46Z' uid='3376721' user='Yunkers' visible='true' version='10' changeset='55964490' lat='50.0545596' lon='19.9383639' />
   <node id='30376025' action='delete' timestamp='2013-11-27T21:20:11Z' uid='658911' user='andrzej_aa' visible='true' version='4' changeset='19149993' lat='50.0547103' lon='19.9332691' />
   <node id='30376026' action='delete' timestamp='2013-11-27T21:20:11Z' uid='658911' user='andrzej_aa' visible='true' version='5' changeset='19149993' lat='50.05427' lon='19.9330079' />
   <node id='30376027' action='delete' timestamp='2012-12-14T22:57:41Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='14276800' lat='50.0541657' lon='19.9327085' />
@@ -24,7 +24,7 @@
   <node id='30376047' action='delete' timestamp='2016-03-12T12:30:42Z' uid='690673' user='Sto-Sto' visible='true' version='9' changeset='37782201' lat='50.0643157' lon='19.9380193' />
   <node id='30376057' action='delete' timestamp='2016-03-12T11:56:36Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='37781742' lat='50.0636278' lon='19.9404334' />
   <node id='30376953' action='delete' timestamp='2015-07-12T12:18:16Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='32580090' lat='50.0616981' lon='19.9318538' />
-  <node id='30376958' timestamp='2016-05-15T14:51:29Z' uid='690673' user='Sto-Sto' visible='true' version='8' changeset='39332536' lat='50.0569854' lon='19.9340511' />
+  <node id='30376958' action='delete' timestamp='2016-05-15T14:51:29Z' uid='690673' user='Sto-Sto' visible='true' version='8' changeset='39332536' lat='50.0569854' lon='19.9340511' />
   <node id='31349996' action='delete' timestamp='2013-10-26T12:39:43Z' uid='693154' user='Władysław Komorek' visible='true' version='28' changeset='18550909' lat='50.0516507' lon='19.9418217'>
     <tag k='highway' v='traffic_signals' />
   </node>
@@ -44,12 +44,12 @@
     <tag k='public_transport' v='stop_position' />
   </node>
   <node id='206372229' action='delete' timestamp='2013-08-15T19:34:17Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='17363717' lat='50.0659334' lon='19.9411196' />
-  <node id='206372380' timestamp='2014-09-16T17:09:00Z' uid='693154' user='Władysław Komorek' visible='true' version='12' changeset='25483927' lat='50.0640861' lon='19.9337123' />
-  <node id='206372383' action='delete' timestamp='2014-10-12T14:49:37Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027097' lat='50.0660181' lon='19.9358515' />
-  <node id='206372384' timestamp='2013-08-15T18:07:46Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='17362683' lat='50.0661325' lon='19.9360062' />
-  <node id='206372385' action='delete' timestamp='2014-10-12T14:49:37Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027097' lat='50.0661731' lon='19.9361419' />
-  <node id='206372386' action='delete' timestamp='2008-12-28T17:12:54Z' uid='86909' user='Luke_33' visible='true' version='4' changeset='644420' lat='50.0661884' lon='19.9365003' />
-  <node id='206372388' timestamp='2014-10-12T15:22:22Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027772' lat='50.066243' lon='19.9383832' />
+  <node id='206372380' action='delete' timestamp='2014-09-16T17:09:00Z' uid='693154' user='Władysław Komorek' visible='true' version='12' changeset='25483927' lat='50.0640861' lon='19.9337123' />
+  <node id='206372383' action='modify' timestamp='2014-10-12T14:49:37Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027097' lat='50.06251911104' lon='19.93638730001' />
+  <node id='206372384' action='modify' timestamp='2013-08-15T18:07:46Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='17362683' lat='50.06249430892' lon='19.94437954437' />
+  <node id='206372385' action='modify' timestamp='2014-10-12T14:49:37Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027097' lat='50.05855052554' lon='19.93652616402' />
+  <node id='206372386' action='delete' timestamp='2008-12-28T17:12:54Z' uid='86909' user='Luke_33' visible='true' version='4' changeset='644420' lat='50.06228604984' lon='19.94398548545' />
+  <node id='206372388' action='delete' timestamp='2014-10-12T15:22:22Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027772' lat='50.066243' lon='19.9383832' />
   <node id='207428888' action='delete' timestamp='2015-04-25T21:19:05Z' uid='1929620' user='sauls' visible='true' version='5' changeset='30485289' lat='50.0664484' lon='19.9419954' />
   <node id='207469749' action='delete' timestamp='2013-12-29T16:50:30Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='10' changeset='19699757' lat='50.054209' lon='19.94334'>
     <tag k='highway' v='crossing' />
@@ -59,7 +59,7 @@
   <node id='226009897' action='delete' timestamp='2014-08-24T20:05:08Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='24988579' lat='50.0658214' lon='19.9345841' />
   <node id='226009900' action='delete' timestamp='2016-03-06T22:35:09Z' uid='690673' user='Sto-Sto' visible='true' version='4' changeset='37655305' lat='50.0658394' lon='19.9348313' />
   <node id='226009912' action='delete' timestamp='2016-03-06T22:35:09Z' uid='690673' user='Sto-Sto' visible='true' version='6' changeset='37655305' lat='50.0658293' lon='19.9351041' />
-  <node id='226009919' timestamp='2014-10-12T14:49:38Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027097' lat='50.065658' lon='19.9354571' />
+  <node id='226009919' action='delete' timestamp='2014-10-12T14:49:38Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='26027097' lat='50.05854094134' lon='19.93649111341' />
   <node id='226010060' action='delete' timestamp='2018-11-11T00:47:18Z' uid='6529331' user='edc22' visible='true' version='5' changeset='64365128' lat='50.0668682' lon='19.9381182' />
   <node id='226010068' action='delete' timestamp='2018-11-11T00:47:18Z' uid='6529331' user='edc22' visible='true' version='5' changeset='64365128' lat='50.0675804' lon='19.9376747' />
   <node id='226010207' action='delete' timestamp='2012-09-28T01:29:53Z' uid='164910' user='ppece' visible='true' version='3' changeset='13279556' lat='50.067281' lon='19.9451247' />
@@ -67,16 +67,16 @@
   <node id='226834652' action='delete' timestamp='2013-09-14T19:57:46Z' uid='1351682' user='PW82' visible='true' version='4' changeset='17839326' lat='50.0672776' lon='19.9437108' />
   <node id='226834987' action='delete' timestamp='2012-09-28T01:29:53Z' uid='164910' user='ppece' visible='true' version='6' changeset='13279556' lat='50.0663386' lon='19.9434295' />
   <node id='226835604' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='72602774' lat='50.0638328' lon='19.9450152' />
-  <node id='226835711' timestamp='2014-08-06T21:41:21Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='24584793' lat='50.0630685' lon='19.9450165' />
-  <node id='226835987' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='72602774' lat='50.06091' lon='19.9439081' />
-  <node id='236136675' timestamp='2019-06-24T08:42:23Z' uid='690673' user='Sto-Sto' visible='true' version='18' changeset='71552833' lat='50.0540981' lon='19.939226'>
+  <node id='226835711' action='delete' timestamp='2014-08-06T21:41:21Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='24584793' lat='50.0630685' lon='19.9450165' />
+  <node id='226835987' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='72602774' lat='50.06091' lon='19.9439081' />
+  <node id='236136675' action='delete' timestamp='2019-06-24T08:42:23Z' uid='690673' user='Sto-Sto' visible='true' version='18' changeset='71552833' lat='50.0540981' lon='19.939226'>
     <tag k='highway' v='mini_roundabout' />
   </node>
   <node id='236137164' action='delete' timestamp='2012-11-06T20:43:41Z' uid='164910' user='ppece' visible='true' version='4' changeset='13778360' lat='50.0549822' lon='19.9378196' />
   <node id='236137393' action='delete' timestamp='2012-12-14T22:02:07Z' uid='693154' user='Władysław Komorek' visible='true' version='3' changeset='14276328' lat='50.0554907' lon='19.9362646' />
-  <node id='236137518' timestamp='2012-12-14T22:02:07Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='14276328' lat='50.0552981' lon='19.9374784' />
+  <node id='236137518' action='delete' timestamp='2012-12-14T22:02:07Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='14276328' lat='50.0552981' lon='19.9374784' />
   <node id='236138034' action='delete' timestamp='2012-12-14T22:02:07Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='14276328' lat='50.0553525' lon='19.9372822' />
-  <node id='236138215' timestamp='2012-12-14T22:02:07Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='14276328' lat='50.0548159' lon='19.9380119' />
+  <node id='236138215' action='delete' timestamp='2012-12-14T22:02:07Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='14276328' lat='50.0548159' lon='19.9380119' />
   <node id='236138465' action='delete' timestamp='2012-12-14T22:02:07Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='14276328' lat='50.0552411' lon='19.9375724' />
   <node id='236138722' action='delete' timestamp='2016-03-19T19:14:17Z' uid='690673' user='Sto-Sto' visible='true' version='5' changeset='37944070' lat='50.0554987' lon='19.9357694' />
   <node id='236139461' action='delete' timestamp='2016-05-15T14:51:27Z' uid='690673' user='Sto-Sto' visible='true' version='9' changeset='39332536' lat='50.0554144' lon='19.9315797' />
@@ -86,7 +86,7 @@
   <node id='240971033' action='delete' timestamp='2016-03-18T19:03:43Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='37925837' lat='50.0647502' lon='19.9316397' />
   <node id='251678246' action='delete' timestamp='2013-10-19T18:27:07Z' uid='693154' user='Władysław Komorek' visible='true' version='6' changeset='18438705' lat='50.0615537' lon='19.940856' />
   <node id='251688755' action='delete' timestamp='2016-03-12T12:30:42Z' uid='690673' user='Sto-Sto' visible='true' version='9' changeset='37782201' lat='50.0653243' lon='19.9387072' />
-  <node id='251688939' timestamp='2015-07-12T12:18:16Z' uid='690673' user='Sto-Sto' visible='true' version='11' changeset='32580090' lat='50.0626356' lon='19.9321021' />
+  <node id='251688939' action='delete' timestamp='2015-07-12T12:18:16Z' uid='690673' user='Sto-Sto' visible='true' version='11' changeset='32580090' lat='50.0626356' lon='19.9321021' />
   <node id='251688941' action='delete' timestamp='2016-03-19T17:44:17Z' uid='690673' user='Sto-Sto' visible='true' version='11' changeset='37942520' lat='50.0617709' lon='19.9342894' />
   <node id='251689105' action='delete' timestamp='2016-03-19T17:44:17Z' uid='690673' user='Sto-Sto' visible='true' version='9' changeset='37942520' lat='50.061016' lon='19.9336966' />
   <node id='251689118' action='delete' timestamp='2012-03-08T14:19:10Z' uid='598456' user='vinci4352' visible='true' version='7' changeset='10909503' lat='50.0606209' lon='19.9348253' />
@@ -159,13 +159,13 @@
     <tag k='name' v='Wawel' />
     <tag k='public_transport' v='stop_position' />
   </node>
-  <node id='261677484' timestamp='2014-07-30T19:05:16Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='24449990' lat='50.0546681' lon='19.9398604' />
+  <node id='261677484' action='delete' timestamp='2014-07-30T19:05:16Z' uid='693154' user='Władysław Komorek' visible='true' version='7' changeset='24449990' lat='50.0546681' lon='19.9398604' />
   <node id='261677500' action='delete' timestamp='2014-07-30T19:05:16Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='24449990' lat='50.058309' lon='19.9408044' />
   <node id='261677501' action='delete' timestamp='2014-07-30T19:05:16Z' uid='693154' user='Władysław Komorek' visible='true' version='8' changeset='24449990' lat='50.0584571' lon='19.9408673' />
   <node id='262193739' action='delete' timestamp='2012-09-28T01:29:54Z' uid='164910' user='ppece' visible='true' version='2' changeset='13279556' lat='50.0664751' lon='19.9397751' />
   <node id='262193740' action='delete' timestamp='2012-09-28T01:29:54Z' uid='164910' user='ppece' visible='true' version='3' changeset='13279556' lat='50.0668904' lon='19.940187' />
   <node id='262193741' action='delete' timestamp='2012-09-28T01:29:54Z' uid='164910' user='ppece' visible='true' version='3' changeset='13279556' lat='50.0667003' lon='19.9409946' />
-  <node id='262193751' timestamp='2013-08-16T11:58:10Z' uid='693154' user='Władysław Komorek' visible='true' version='8' changeset='17370830' lat='50.0656981' lon='19.9418248' />
+  <node id='262193751' action='delete' timestamp='2013-08-16T11:58:10Z' uid='693154' user='Władysław Komorek' visible='true' version='8' changeset='17370830' lat='50.0656981' lon='19.9418248' />
   <node id='262193753' action='delete' timestamp='2017-11-18T13:56:58Z' uid='336767' user='Meijinaerum' visible='true' version='4' changeset='53901702' lat='50.0670622' lon='19.9427925' />
   <node id='262206401' action='delete' timestamp='2016-10-21T15:24:46Z' uid='3376721' user='Yunkers' visible='true' version='8' changeset='43062245' lat='50.0645637' lon='19.9454005' />
   <node id='268201972' action='delete' timestamp='2019-11-24T15:25:10Z' uid='670365' user='canislupus11' visible='true' version='11' changeset='77484849' lat='50.0590199' lon='19.9404154'>
@@ -210,7 +210,7 @@
   <node id='273473988' action='delete' timestamp='2016-03-12T11:36:14Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='37781445' lat='50.0642307' lon='19.9353435' />
   <node id='273483027' action='delete' timestamp='2016-05-15T14:51:28Z' uid='690673' user='Sto-Sto' visible='true' version='8' changeset='39332536' lat='50.0577483' lon='19.9337005' />
   <node id='273485824' action='delete' timestamp='2016-03-19T19:14:18Z' uid='690673' user='Sto-Sto' visible='true' version='5' changeset='37944070' lat='50.056531' lon='19.9374836' />
-  <node id='273485828' timestamp='2015-08-24T17:56:58Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='33553220' lat='50.0554177' lon='19.9368011' />
+  <node id='273485828' action='delete' timestamp='2015-08-24T17:56:58Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='33553220' lat='50.0554177' lon='19.9368011' />
   <node id='273485829' action='delete' timestamp='2016-03-19T19:14:18Z' uid='690673' user='Sto-Sto' visible='true' version='6' changeset='37944070' lat='50.0555084' lon='19.9358792' />
   <node id='273488855' action='delete' timestamp='2018-03-09T16:06:48Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='10' changeset='57036303' lat='50.0578577' lon='19.9350545'>
     <tag k='bicycle' v='no' />
@@ -281,8 +281,8 @@
     <tag k='tactile_paving' v='yes' />
   </node>
   <node id='274094837' action='delete' timestamp='2014-09-17T22:12:56Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='25510505' lat='50.0611371' lon='19.93224' />
-  <node id='274115136' action='delete' timestamp='2015-12-18T17:16:50Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='5' changeset='36032224' lat='50.0658167' lon='19.9356391' />
-  <node id='275178481' timestamp='2012-12-14T22:02:08Z' uid='693154' user='Władysław Komorek' visible='true' version='4' changeset='14276328' lat='50.0554813' lon='19.9356567' />
+  <node id='274115136' action='modify' timestamp='2015-12-18T17:16:50Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='5' changeset='36032224' lat='50.06228823335' lon='19.93291629921' />
+  <node id='275178481' action='delete' timestamp='2012-12-14T22:02:08Z' uid='693154' user='Władysław Komorek' visible='true' version='4' changeset='14276328' lat='50.0554813' lon='19.9356567' />
   <node id='275178510' action='delete' timestamp='2015-09-22T15:12:48Z' uid='690673' user='Sto-Sto' visible='true' version='9' changeset='34185770' lat='50.0586218' lon='19.9332919'>
     <tag k='bicycle' v='no' />
     <tag k='crossing' v='traffic_signals' />
@@ -373,12 +373,12 @@
   <node id='311338205' action='delete' timestamp='2014-08-16T23:33:06Z' uid='690673' user='Sto-Sto' visible='true' version='6' changeset='24797536' lat='50.0642983' lon='19.9451585' />
   <node id='378365953' action='delete' timestamp='2016-05-03T13:35:26Z' uid='690673' user='Sto-Sto' visible='true' version='7' changeset='39066380' lat='50.0617603' lon='19.9434181' />
   <node id='378365965' action='delete' timestamp='2013-09-18T11:54:17Z' uid='1351682' user='PW82' visible='true' version='5' changeset='17904447' lat='50.0613597' lon='19.9432309' />
-  <node id='414635892' timestamp='2016-03-12T11:36:15Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='37781445' lat='50.0657808' lon='19.9415739' />
+  <node id='414635892' action='delete' timestamp='2016-03-12T11:36:15Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='37781445' lat='50.0657808' lon='19.9415739' />
   <node id='414637230' action='delete' timestamp='2013-10-19T13:38:42Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='3' changeset='18433941' lat='50.0662488' lon='19.9385663' />
   <node id='457542830' action='delete' timestamp='2013-10-20T11:28:25Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='18449154' lat='50.0631005' lon='19.936121' />
   <node id='470211849' action='delete' timestamp='2015-08-29T09:23:06Z' uid='690673' user='Sto-Sto' visible='true' version='6' changeset='33659831' lat='50.0571919' lon='19.9446002' />
   <node id='571611842' action='delete' timestamp='2013-08-14T22:23:34Z' uid='693154' user='Władysław Komorek' visible='true' version='4' changeset='17352732' lat='50.059197' lon='19.9369534' />
-  <node id='596531118' timestamp='2019-01-17T22:53:47Z' uid='6785548' user='Blaise Pexyk' visible='true' version='5' changeset='66410107' lat='50.0658186' lon='19.9414507'>
+  <node id='596531118' action='delete' timestamp='2019-01-17T22:53:47Z' uid='6785548' user='Blaise Pexyk' visible='true' version='5' changeset='66410107' lat='50.0658186' lon='19.9414507'>
     <tag k='bicycle' v='yes' />
     <tag k='crossing' v='marked' />
     <tag k='crossing_ref' v='zebra' />
@@ -391,7 +391,7 @@
     <tag k='crossing_ref' v='zebra' />
     <tag k='highway' v='crossing' />
   </node>
-  <node id='602651341' timestamp='2013-08-18T18:27:23Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='17400411' lat='50.0591272' lon='19.9330284' />
+  <node id='602651341' action='delete' timestamp='2013-08-18T18:27:23Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='17400411' lat='50.0591272' lon='19.9330284' />
   <node id='609758831' action='delete' timestamp='2019-01-17T23:19:48Z' uid='6785548' user='Blaise Pexyk' visible='true' version='4' changeset='66410568' lat='50.0544694' lon='19.9383838'>
     <tag k='source' v='http://ump.waw.pl/ retrieved 11:04:55 11/17/09 (UMP-Krakow/src/KRAKOW_I_STAREMIASTO.ulice.txt)' />
   </node>
@@ -608,7 +608,7 @@
     <tag k='highway' v='crossing' />
   </node>
   <node id='2067207840' action='delete' timestamp='2012-12-14T22:01:59Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='14276328' lat='50.0551204' lon='19.937693' />
-  <node id='2067207841' timestamp='2012-12-14T22:01:59Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='14276328' lat='50.0553014' lon='19.9348386' />
+  <node id='2067207841' action='delete' timestamp='2012-12-14T22:01:59Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='14276328' lat='50.0553014' lon='19.9348386' />
   <node id='2067207842' action='delete' timestamp='2012-12-14T22:01:59Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='14276328' lat='50.0553287' lon='19.9373836' />
   <node id='2067207843' action='delete' timestamp='2012-12-14T22:01:59Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='14276328' lat='50.0553764' lon='19.9348022'>
     <tag k='crossing' v='uncontrolled' />
@@ -811,13 +811,13 @@
   <node id='2419253866' action='delete' timestamp='2013-08-14T19:47:44Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='17350684' lat='50.0554263' lon='19.9446139' />
   <node id='2419253882' action='delete' timestamp='2013-08-14T20:16:18Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='17351285' lat='50.0560965' lon='19.9451306' />
   <node id='2419302956' action='delete' timestamp='2014-07-26T19:07:59Z' uid='693154' user='Władysław Komorek' visible='true' version='3' changeset='24372559' lat='50.0537535' lon='19.9395689' />
-  <node id='2419367407' timestamp='2014-08-18T13:31:10Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='24832944' lat='50.0587045' lon='19.9332501'>
+  <node id='2419367407' action='delete' timestamp='2014-08-18T13:31:10Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='24832944' lat='50.0587045' lon='19.9332501'>
     <tag k='highway' v='traffic_signals' />
   </node>
   <node id='2419367450' action='delete' timestamp='2014-08-18T13:31:10Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='24832944' lat='50.0593749' lon='19.9348836' />
-  <node id='2419367461' timestamp='2016-05-15T14:51:27Z' uid='690673' user='Sto-Sto' visible='true' version='4' changeset='39332536' lat='50.0594163' lon='19.9328795' />
+  <node id='2419367461' action='delete' timestamp='2016-05-15T14:51:27Z' uid='690673' user='Sto-Sto' visible='true' version='4' changeset='39332536' lat='50.0594163' lon='19.9328795' />
   <node id='2419367463' action='delete' timestamp='2013-08-15T12:26:16Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='17358603' lat='50.0594402' lon='19.935725' />
-  <node id='2419367468' timestamp='2018-05-10T12:51:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='5' changeset='58849786' lat='50.0594883' lon='19.9328445'>
+  <node id='2419367468' action='delete' timestamp='2018-05-10T12:51:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='5' changeset='58849786' lat='50.0594883' lon='19.9328445'>
     <tag k='bicycle' v='yes' />
     <tag k='crossing' v='uncontrolled' />
     <tag k='highway' v='crossing' />
@@ -826,7 +826,7 @@
     <tag k='crossing' v='uncontrolled' />
     <tag k='highway' v='crossing' />
   </node>
-  <node id='2419367482' timestamp='2015-07-12T12:18:15Z' uid='690673' user='Sto-Sto' visible='true' version='5' changeset='32580090' lat='50.060506' lon='19.9324181' />
+  <node id='2419367482' action='delete' timestamp='2015-07-12T12:18:15Z' uid='690673' user='Sto-Sto' visible='true' version='5' changeset='32580090' lat='50.060506' lon='19.9324181' />
   <node id='2419768569' action='delete' timestamp='2014-09-22T16:13:53Z' uid='693154' user='Władysław Komorek' visible='true' version='3' changeset='25606810' lat='50.0591021' lon='19.9387054' />
   <node id='2419768573' action='delete' timestamp='2015-08-30T16:34:27Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='33685986' lat='50.0592199' lon='19.9387187' />
   <node id='2419768585' action='delete' timestamp='2013-08-15T12:26:05Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='17358603' lat='50.0594556' lon='19.9359313' />
@@ -845,19 +845,19 @@
     <tag k='crossing' v='uncontrolled' />
     <tag k='highway' v='crossing' />
   </node>
-  <node id='2419894856' timestamp='2016-03-19T17:44:16Z' uid='690673' user='Sto-Sto' visible='true' version='4' changeset='37942520' lat='50.0619394' lon='19.9317797' />
+  <node id='2419894856' action='delete' timestamp='2016-03-19T17:44:16Z' uid='690673' user='Sto-Sto' visible='true' version='4' changeset='37942520' lat='50.0619394' lon='19.9317797' />
   <node id='2419894858' action='delete' timestamp='2015-07-12T12:18:16Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='32580090' lat='50.0620305' lon='19.9317903' />
   <node id='2419894863' action='delete' timestamp='2015-07-12T12:18:16Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='32580090' lat='50.0624788' lon='19.9319823' />
-  <node id='2419894894' timestamp='2016-03-20T08:41:23Z' uid='690673' user='Sto-Sto' visible='true' version='6' changeset='37951446' lat='50.0634183' lon='19.9329642' />
+  <node id='2419894894' action='delete' timestamp='2016-03-20T08:41:23Z' uid='690673' user='Sto-Sto' visible='true' version='6' changeset='37951446' lat='50.0634183' lon='19.9329642' />
   <node id='2419894924' action='delete' timestamp='2019-12-05T07:42:58Z' uid='670365' user='canislupus11' visible='true' version='5' changeset='77976413' lat='50.063656' lon='19.932718'>
     <tag k='crossing' v='marked' />
     <tag k='highway' v='crossing' />
     <tag k='tactile_paving' v='no' />
   </node>
-  <node id='2420153436' timestamp='2014-07-31T19:10:32Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='24468961' lat='50.0646229' lon='19.9449476'>
+  <node id='2420153436' action='delete' timestamp='2014-07-31T19:10:32Z' uid='693154' user='Władysław Komorek' visible='true' version='5' changeset='24468961' lat='50.0646229' lon='19.9449476'>
     <tag k='highway' v='traffic_signals' />
   </node>
-  <node id='2420153454' timestamp='2016-03-12T11:36:14Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='37781445' lat='50.065279' lon='19.943047' />
+  <node id='2420153454' action='delete' timestamp='2016-03-12T11:36:14Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='37781445' lat='50.065279' lon='19.943047' />
   <node id='2420153455' action='delete' timestamp='2016-03-12T11:36:14Z' uid='690673' user='Sto-Sto' visible='true' version='3' changeset='37781445' lat='50.0653824' lon='19.942745' />
   <node id='2420153468' action='delete' timestamp='2019-05-18T16:33:51Z' uid='6785548' user='Blaise Pexyk' visible='true' version='6' changeset='70391349' lat='50.0662758' lon='19.9393188'>
     <tag k='bicycle' v='no' />
@@ -865,7 +865,7 @@
     <tag k='highway' v='crossing' />
     <tag k='tactile_paving' v='yes' />
   </node>
-  <node id='2420200270' timestamp='2014-07-31T19:10:34Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='24468961' lat='50.0645398' lon='19.9449186' />
+  <node id='2420200270' action='delete' timestamp='2014-07-31T19:10:34Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='24468961' lat='50.0645398' lon='19.9449186' />
   <node id='2420216114' action='delete' timestamp='2019-10-10T09:39:15Z' uid='9451433' user='AxorPL' visible='true' version='6' changeset='75500185' lat='50.0597231' lon='19.9423231'>
     <tag k='crossing' v='marked' />
     <tag k='highway' v='crossing' />
@@ -1365,7 +1365,7 @@
     <tag k='barrier' v='lift_gate' />
   </node>
   <node id='2989855493' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='72602774' lat='50.0606166' lon='19.9435616' />
-  <node id='2989855498' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='72602774' lat='50.0610038' lon='19.9439954' />
+  <node id='2989855498' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='72602774' lat='50.0610038' lon='19.9439954' />
   <node id='2989855506' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='4' changeset='72602774' lat='50.0633422' lon='19.9450617'>
     <tag k='crossing' v='uncontrolled' />
     <tag k='highway' v='crossing' />
@@ -1537,7 +1537,7 @@
     <tag k='crossing' v='traffic_signals' />
     <tag k='highway' v='crossing' />
   </node>
-  <node id='3024563471' timestamp='2014-08-18T13:31:03Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='24832944' lat='50.0588017' lon='19.9332013'>
+  <node id='3024563471' action='delete' timestamp='2014-08-18T13:31:03Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='24832944' lat='50.0588017' lon='19.9332013'>
     <tag k='highway' v='traffic_signals' />
   </node>
   <node id='3024563472' action='delete' timestamp='2014-08-18T13:31:03Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='24832944' lat='50.0588125' lon='19.9333281' />
@@ -1572,7 +1572,7 @@
   </node>
   <node id='3024563484' action='delete' timestamp='2014-08-18T13:31:04Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='24832944' lat='50.059365' lon='19.9346587' />
   <node id='3024563487' action='delete' timestamp='2014-08-18T13:31:04Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='24832944' lat='50.059602' lon='19.9329406' />
-  <node id='3024563489' timestamp='2014-08-18T13:31:04Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='24832944' lat='50.0599542' lon='19.9326733' />
+  <node id='3024563489' action='delete' timestamp='2014-08-18T13:31:04Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='24832944' lat='50.0599542' lon='19.9326733' />
   <node id='3025253161' action='delete' timestamp='2014-08-18T18:42:03Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='24840770' lat='50.0588689' lon='19.9333403' />
   <node id='3027072357' action='delete' timestamp='2015-03-15T22:08:57Z' uid='690673' user='Sto-Sto' visible='true' version='2' changeset='29505999' lat='50.0647012' lon='19.9460984' />
   <node id='3027077766' action='delete' timestamp='2017-11-18T14:01:55Z' uid='336767' user='Meijinaerum' visible='true' version='4' changeset='53901829' lat='50.0659984' lon='19.9452452' />
@@ -1598,7 +1598,7 @@
     <tag k='crossing' v='unmarked' />
     <tag k='highway' v='crossing' />
   </node>
-  <node id='3035194229' timestamp='2014-08-22T16:48:47Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='24936467' lat='50.0561385' lon='19.940272' />
+  <node id='3035194229' action='delete' timestamp='2014-08-22T16:48:47Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='24936467' lat='50.0561385' lon='19.940272' />
   <node id='3035194230' action='delete' timestamp='2014-08-22T16:48:47Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='24936467' lat='50.05625304868' lon='19.94081614108' />
   <node id='3035194231' action='delete' timestamp='2014-08-22T16:48:47Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='24936467' lat='50.0563022' lon='19.9403124' />
   <node id='3035194232' action='delete' timestamp='2014-08-22T16:48:47Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='24936467' lat='50.0565411' lon='19.9403718' />
@@ -1623,7 +1623,7 @@
   <node id='3080535815' action='delete' timestamp='2014-09-16T17:07:57Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='25483927' lat='50.0640101' lon='19.9360144' />
   <node id='3080655477' action='delete' timestamp='2014-09-16T18:46:59Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='25486050' lat='50.064486' lon='19.9358538' />
   <node id='3080700054' action='delete' timestamp='2014-09-16T19:18:48Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='25486653' lat='50.0648899' lon='19.9368988' />
-  <node id='3082457610' timestamp='2014-09-17T15:37:00Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='25503552' lat='50.0662206' lon='19.9401628' />
+  <node id='3082457610' action='delete' timestamp='2014-09-17T15:37:00Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='25503552' lat='50.0662206' lon='19.9401628' />
   <node id='3083016940' action='delete' timestamp='2014-09-17T18:51:40Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='25507103' lat='50.0629566' lon='19.9433484' />
   <node id='3083016957' action='delete' timestamp='2014-09-17T18:51:45Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='25507103' lat='50.0629974' lon='19.9431983' />
   <node id='3083016962' action='delete' timestamp='2016-03-12T12:09:17Z' uid='690673' user='Sto-Sto' visible='true' version='2' changeset='37781898' lat='50.0630119' lon='19.9431452' />
@@ -1821,7 +1821,7 @@
   <node id='3721187388' action='delete' timestamp='2015-08-30T09:43:01Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='33679064' lat='50.0571297' lon='19.9381319' />
   <node id='3721187392' action='delete' timestamp='2016-03-15T22:21:53Z' uid='690673' user='Sto-Sto' visible='true' version='2' changeset='37858306' lat='50.0580777' lon='19.9375816' />
   <node id='3721187411' action='delete' timestamp='2015-08-30T09:43:01Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='33679064' lat='50.060457' lon='19.9362888' />
-  <node id='3721726318' action='modify' timestamp='2019-01-17T23:19:48Z' uid='6785548' user='Blaise Pexyk' visible='true' version='4' changeset='66410568' lat='50.05436125098' lon='19.9386591786' />
+  <node id='3721726318' action='delete' timestamp='2019-01-17T23:19:48Z' uid='6785548' user='Blaise Pexyk' visible='true' version='4' changeset='66410568' lat='50.054397' lon='19.9386035' />
   <node id='3721726674' action='delete' timestamp='2016-05-01T20:46:09Z' uid='690673' user='Sto-Sto' visible='true' version='2' changeset='39025465' lat='50.0603124' lon='19.9336577' />
   <node id='3754628368' action='delete' timestamp='2015-09-22T15:12:36Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='34185770' lat='50.0595001' lon='19.9328913' />
   <node id='3764339050' action='delete' timestamp='2018-12-12T16:21:17Z' uid='6785548' user='Blaise Pexyk' visible='true' version='4' changeset='65414586' lat='50.0657692' lon='19.9344404'>
@@ -2228,7 +2228,7 @@
     <tag k='public_transport' v='stop_position' />
   </node>
   <node id='5209014121' action='delete' timestamp='2017-11-03T19:20:31Z' uid='336767' user='Meijinaerum' visible='true' version='1' changeset='53487357' lat='50.0586154' lon='19.9372963' />
-  <node id='5219326000' timestamp='2017-11-09T08:12:58Z' uid='2844322' user='Olga | Yanosik' visible='true' version='1' changeset='53631849' lat='50.0662688' lon='19.9390802' />
+  <node id='5219326000' action='delete' timestamp='2017-11-09T08:12:58Z' uid='2844322' user='Olga | Yanosik' visible='true' version='1' changeset='53631849' lat='50.0662688' lon='19.9390802' />
   <node id='5236411786' action='delete' timestamp='2017-11-18T13:56:56Z' uid='336767' user='Meijinaerum' visible='true' version='1' changeset='53901702' lat='50.0674085' lon='19.9426907' />
   <node id='5236411787' action='delete' timestamp='2017-11-18T13:56:56Z' uid='336767' user='Meijinaerum' visible='true' version='1' changeset='53901702' lat='50.0673891' lon='19.9426505' />
   <node id='5236411788' action='delete' timestamp='2017-11-18T13:56:56Z' uid='336767' user='Meijinaerum' visible='true' version='1' changeset='53901702' lat='50.0673644' lon='19.9425943' />
@@ -2250,10 +2250,10 @@
   <node id='5304862967' action='delete' timestamp='2017-12-26T14:24:10Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='54931023' lat='50.0591968' lon='19.9382663' />
   <node id='5304862974' action='delete' timestamp='2017-12-26T14:24:10Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='54931023' lat='50.05538723598' lon='19.93784913787' />
   <node id='5304862975' action='delete' timestamp='2017-12-26T14:24:10Z' uid='690673' user='Sto-Sto' visible='true' version='1' changeset='54931023' lat='50.0553474' lon='19.9377977' />
-  <node id='5323112765' timestamp='2018-01-06T03:00:05Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='55202435' lat='50.065092' lon='19.9435815' />
+  <node id='5323112765' action='delete' timestamp='2018-01-06T03:00:05Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='55202435' lat='50.065092' lon='19.9435815' />
   <node id='5332328318' action='delete' timestamp='2018-01-11T03:25:09Z' uid='1998150' user='edi18028' visible='true' version='1' changeset='55340674' lat='50.0602541' lon='19.9306263' />
-  <node id='5332405315' timestamp='2018-01-11T04:31:06Z' uid='1998150' user='edi18028' visible='true' version='1' changeset='55341500' lat='50.0650966' lon='19.943568' />
-  <node id='5377839922' timestamp='2018-02-01T12:33:46Z' uid='3376721' user='Yunkers' visible='true' version='1' changeset='55964490' lat='50.054165' lon='19.9389903' />
+  <node id='5332405315' action='delete' timestamp='2018-01-11T04:31:06Z' uid='1998150' user='edi18028' visible='true' version='1' changeset='55341500' lat='50.0650966' lon='19.943568' />
+  <node id='5377839922' action='delete' timestamp='2018-02-01T12:33:46Z' uid='3376721' user='Yunkers' visible='true' version='1' changeset='55964490' lat='50.054165' lon='19.9389903' />
   <node id='5398469106' action='delete' timestamp='2019-05-23T21:02:15Z' uid='6785548' user='Blaise Pexyk' visible='true' version='2' changeset='70566207' lat='50.0661434' lon='19.9439531' />
   <node id='5398469107' action='delete' timestamp='2019-05-23T21:02:14Z' uid='6785548' user='Blaise Pexyk' visible='true' version='2' changeset='70566207' lat='50.0660364' lon='19.9438736' />
   <node id='5441319481' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='2' changeset='72602774' lat='50.0598061' lon='19.9424384'>
@@ -2370,15 +2370,15 @@
   <node id='6508610790' action='delete' timestamp='2019-05-29T11:06:51Z' uid='6785548' user='Blaise Pexyk' visible='true' version='1' changeset='70729301' lat='50.0656757' lon='19.9316376' />
   <node id='6593492226' action='delete' timestamp='2019-07-06T17:49:51Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='71964827' lat='50.0550546' lon='19.9294928' />
   <node id='6593492227' action='delete' timestamp='2019-07-06T17:49:51Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='71964827' lat='50.0549318' lon='19.9288238' />
-  <node id='6643622512' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0607462' lon='19.9437284' />
-  <node id='6643622515' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0595854' lon='19.9421312' />
+  <node id='6643622512' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0607462' lon='19.9437284' />
+  <node id='6643622515' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0595854' lon='19.9421312' />
   <node id='6643622522' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0570604' lon='19.9447239' />
-  <node id='6643622527' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0611752' lon='19.9441233' />
-  <node id='6643622528' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0624028' lon='19.9448443' />
+  <node id='6643622527' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0611752' lon='19.9441233' />
+  <node id='6643622528' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0624028' lon='19.9448443' />
   <node id='6643622529' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0625194' lon='19.9449037' />
   <node id='6643622530' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0626584' lon='19.9449468' />
-  <node id='6643622531' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.062778' lon='19.9449678' />
-  <node id='6643622533' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0633876' lon='19.9450642' />
+  <node id='6643622531' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.062778' lon='19.9449678' />
+  <node id='6643622533' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0633876' lon='19.9450642' />
   <node id='6643622537' action='delete' timestamp='2019-07-24T13:19:33Z' uid='693154' user='Władysław Komorek' visible='true' version='1' changeset='72602774' lat='50.0646204' lon='19.9460623' />
   <node id='6649676190' action='delete' timestamp='2019-07-26T10:48:14Z' uid='10170934' user='m_i-k_i' visible='true' version='1' changeset='72680155' lat='50.0664711' lon='19.9419064'>
     <tag k='crossing' v='marked' />
@@ -2448,7 +2448,7 @@
   <node id='6927219390' action='delete' timestamp='2019-10-29T13:32:56Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='76346712' lat='50.0650885' lon='19.9439398' />
   <node id='6927219391' action='delete' timestamp='2019-10-29T13:32:56Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='76346712' lat='50.0652089' lon='19.9440417' />
   <node id='6927219392' action='delete' timestamp='2019-10-29T13:32:56Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='76346712' lat='50.06519630676' lon='19.94401776893' />
-  <node id='6982585314' timestamp='2019-11-16T12:46:29Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='77163752' lat='50.0574442' lon='19.9405945' />
+  <node id='6982585314' action='delete' timestamp='2019-11-16T12:46:29Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='77163752' lat='50.0574442' lon='19.9405945' />
   <node id='6982585315' action='delete' timestamp='2019-11-16T12:46:29Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='77163752' lat='50.05741311651' lon='19.94101813749' />
   <node id='6982618906' action='delete' timestamp='2019-11-16T13:11:42Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='77164257' lat='50.0555961' lon='19.9419404' />
   <node id='7019506196' action='delete' timestamp='2019-11-29T12:56:14Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='77729447' lat='50.0546481' lon='19.9381684' />
@@ -2462,9 +2462,7 @@
     <tag k='wheelchair' v='no' />
   </node>
   <node id='7299803255' action='delete' timestamp='2020-03-16T17:36:56Z' uid='699708' user='Robercin' visible='true' version='1' changeset='82268136' lat='50.0621051' lon='19.9335647' />
-  <way id='19803469' action='modify' timestamp='2019-08-23T09:13:06Z' uid='518780' user='ne17sg' visible='true' version='50' changeset='73655823'>
-    <nd ref='206372380' />
-    <nd ref='2419894894' />
+  <way id='19803469' action='delete' timestamp='2019-08-23T09:13:06Z' uid='518780' user='ne17sg' visible='true' version='50' changeset='73655823'>
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='goods' v='delivery' />
     <tag k='highway' v='residential' />
@@ -2485,10 +2483,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='21094573' action='modify' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='37' changeset='76842427'>
-    <nd ref='2420153436' />
-    <nd ref='2420200270' />
-    <nd ref='6643622533' />
+  <way id='21094573' action='delete' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='37' changeset='76842427'>
     <tag k='highway' v='residential' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='30' />
@@ -2684,9 +2679,11 @@
     <tag k='surface' v='asphalt' />
   </way>
   <way id='24187018' action='modify' timestamp='2019-09-02T12:49:25Z' uid='4873389' user='Iga | Yanosik' visible='true' version='32' changeset='73999706'>
-    <nd ref='206372388' />
+    <nd ref='206372385' />
     <nd ref='206372384' />
-    <nd ref='226009919' />
+    <nd ref='206372383' />
+    <nd ref='274115136' />
+    <nd ref='206372385' />
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='highway' v='residential' />
     <tag k='lanes' v='3' />
@@ -2716,9 +2713,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='sett' />
   </way>
-  <way id='24187120' action='modify' timestamp='2018-05-14T07:44:16Z' uid='3335899' user='GBAB' visible='true' version='19' changeset='58942572'>
-    <nd ref='236137518' />
-    <nd ref='273485828' />
+  <way id='24187120' action='delete' timestamp='2018-05-14T07:44:16Z' uid='3335899' user='GBAB' visible='true' version='19' changeset='58942572'>
     <tag k='highway' v='tertiary' />
     <tag k='maxspeed' v='30' />
     <tag k='name' v='Podzamcze' />
@@ -3087,9 +3082,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='25149946' action='modify' timestamp='2018-04-08T15:47:59Z' uid='690673' user='Sto-Sto' visible='true' version='35' changeset='57916365'>
-    <nd ref='2419894856' />
-    <nd ref='2419367482' />
+  <way id='25149946' action='delete' timestamp='2018-04-08T15:47:59Z' uid='690673' user='Sto-Sto' visible='true' version='35' changeset='57916365'>
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='highway' v='residential' />
     <tag k='lanes' v='3' />
@@ -3118,10 +3111,7 @@
     <tag k='source:maxspeed' v='PL:living_street' />
     <tag k='surface' v='paved' />
   </way>
-  <way id='25443312' action='modify' timestamp='2016-05-29T08:55:49Z' uid='690673' user='Sto-Sto' visible='true' version='16' changeset='39637824'>
-    <nd ref='2419367407' />
-    <nd ref='30376958' />
-    <nd ref='2067207841' />
+  <way id='25443312' action='delete' timestamp='2016-05-29T08:55:49Z' uid='690673' user='Sto-Sto' visible='true' version='16' changeset='39637824'>
     <tag k='highway' v='tertiary' />
     <tag k='maxspeed' v='30' />
     <tag k='name' v='Floriana Straszewskiego' />
@@ -3306,9 +3296,7 @@
     <tag k='source:maxspeed' v='PL:living_street' />
     <tag k='surface' v='paved' />
   </way>
-  <way id='37833188' action='modify' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='16' changeset='76842427'>
-    <nd ref='6643622515' />
-    <nd ref='30372096' />
+  <way id='37833188' action='delete' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='16' changeset='76842427'>
     <tag k='bus:forward' v='private' />
     <tag k='highway' v='residential' />
     <tag k='lit' v='yes' />
@@ -3320,10 +3308,7 @@
     <tag k='source:maxspeed' v='PL:urban' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='37836175' action='modify' timestamp='2018-04-08T15:48:00Z' uid='690673' user='Sto-Sto' visible='true' version='28' changeset='57916365'>
-    <nd ref='596531118' />
-    <nd ref='3082457610' />
-    <nd ref='5219326000' />
+  <way id='37836175' action='delete' timestamp='2018-04-08T15:48:00Z' uid='690673' user='Sto-Sto' visible='true' version='28' changeset='57916365'>
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='goods' v='delivery' />
     <tag k='highway' v='residential' />
@@ -3342,9 +3327,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='37844680' action='modify' timestamp='2017-11-20T20:41:08Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='18' changeset='53960233'>
-    <nd ref='2419367482' />
-    <nd ref='3024563489' />
+  <way id='37844680' action='delete' timestamp='2017-11-20T20:41:08Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='18' changeset='53960233'>
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='30' />
@@ -3426,9 +3409,7 @@
     <tag k='surface' v='paving_stones' />
     <tag k='turn:lanes' v='through|right' />
   </way>
-  <way id='58108840' action='modify' timestamp='2018-04-08T15:48:01Z' uid='690673' user='Sto-Sto' visible='true' version='29' changeset='57916365'>
-    <nd ref='2420153454' />
-    <nd ref='262193751' />
+  <way id='58108840' action='delete' timestamp='2018-04-08T15:48:01Z' uid='690673' user='Sto-Sto' visible='true' version='29' changeset='57916365'>
     <tag k='cycleway' v='opposite_lane' />
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='hgv' v='no' />
@@ -3460,9 +3441,7 @@
     <tag k='surface' v='paved' />
     <tag k='unsigned_ref' v='2205K' />
   </way>
-  <way id='78238137' timestamp='2020-02-22T12:17:12Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='23' changeset='81344584'>
-    <nd ref='414635892' />
-    <nd ref='596531118' />
+  <way id='78238137' action='delete' timestamp='2020-02-22T12:17:12Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='23' changeset='81344584'>
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='goods' v='delivery' />
     <tag k='highway' v='residential' />
@@ -3518,9 +3497,7 @@
     <tag k='source:maxspeed' v='PL:urban' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='82800559' action='modify' timestamp='2019-08-23T09:13:06Z' uid='518780' user='ne17sg' visible='true' version='26' changeset='73655823'>
-    <nd ref='2419894894' />
-    <nd ref='251688939' />
+  <way id='82800559' action='delete' timestamp='2019-08-23T09:13:06Z' uid='518780' user='ne17sg' visible='true' version='26' changeset='73655823'>
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='goods' v='delivery' />
     <tag k='highway' v='residential' />
@@ -3537,9 +3514,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='82800563' action='modify' timestamp='2018-04-08T15:48:02Z' uid='690673' user='Sto-Sto' visible='true' version='24' changeset='57916365'>
-    <nd ref='5219326000' />
-    <nd ref='206372388' />
+  <way id='82800563' action='delete' timestamp='2018-04-08T15:48:02Z' uid='690673' user='Sto-Sto' visible='true' version='24' changeset='57916365'>
     <tag k='cycleway' v='opposite_lane' />
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='goods' v='delivery' />
@@ -3573,12 +3548,7 @@
     <tag k='surface' v='asphalt' />
     <tag k='unsigned_ref' v='2259K' />
   </way>
-  <way id='94092847' action='modify' timestamp='2019-11-16T12:46:29Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='29' changeset='77163752'>
-    <nd ref='236136675' />
-    <nd ref='261677484' />
-    <nd ref='3035194229' />
-    <nd ref='6982585314' />
-    <nd ref='30372096' />
+  <way id='94092847' action='delete' timestamp='2019-11-16T12:46:29Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='29' changeset='77163752'>
     <tag k='highway' v='residential' />
     <tag k='maxspeed' v='50' />
     <tag k='maxspeed:conditional' v='60 @ (23:00-05:00)' />
@@ -3679,11 +3649,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='paving_stones' />
   </way>
-  <way id='147579536' action='modify' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='17' changeset='76842427'>
-    <nd ref='6643622527' />
-    <nd ref='2989855498' />
-    <nd ref='226835987' />
-    <nd ref='6643622512' />
+  <way id='147579536' action='delete' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='17' changeset='76842427'>
     <tag k='highway' v='residential' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='50' />
@@ -3694,24 +3660,7 @@
     <tag k='source:maxspeed' v='PL:urban' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='147579538' action='modify' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='18' changeset='76842427'>
-    <nd ref='6643622512' />
-    <nd ref='6643622515' />
-    <tag k='highway' v='residential' />
-    <tag k='lit' v='yes' />
-    <tag k='maxspeed' v='50' />
-    <tag k='maxspeed:conditional' v='60 @ (23:00-05:00)' />
-    <tag k='name' v='Westerplatte' />
-    <tag k='name:de' v='Ostring' />
-    <tag k='old_name' v='Kolejowa, Andrzeja Potockiego, Marszałka Stalina' />
-    <tag k='sidewalk' v='separate' />
-    <tag k='source:maxspeed' v='PL:urban' />
-    <tag k='surface' v='asphalt' />
-  </way>
-  <way id='147579539' action='modify' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='18' changeset='76842427'>
-    <nd ref='6643622531' />
-    <nd ref='6643622528' />
-    <nd ref='6643622527' />
+  <way id='147579538' action='delete' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='18' changeset='76842427'>
     <tag k='highway' v='residential' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='50' />
@@ -3723,10 +3672,19 @@
     <tag k='source:maxspeed' v='PL:urban' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='147579540' action='modify' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='19' changeset='76842427'>
-    <nd ref='6643622533' />
-    <nd ref='226835711' />
-    <nd ref='6643622531' />
+  <way id='147579539' action='delete' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='18' changeset='76842427'>
+    <tag k='highway' v='residential' />
+    <tag k='lit' v='yes' />
+    <tag k='maxspeed' v='50' />
+    <tag k='maxspeed:conditional' v='60 @ (23:00-05:00)' />
+    <tag k='name' v='Westerplatte' />
+    <tag k='name:de' v='Ostring' />
+    <tag k='old_name' v='Kolejowa, Andrzeja Potockiego, Marszałka Stalina' />
+    <tag k='sidewalk' v='separate' />
+    <tag k='source:maxspeed' v='PL:urban' />
+    <tag k='surface' v='asphalt' />
+  </way>
+  <way id='147579540' action='delete' timestamp='2019-11-09T11:46:24Z' uid='3376721' user='Yunkers' visible='true' version='19' changeset='76842427'>
     <tag k='highway' v='residential' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='50' />
@@ -3809,9 +3767,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='187972989' timestamp='2018-04-08T15:48:02Z' uid='690673' user='Sto-Sto' visible='true' version='19' changeset='57916365'>
-    <nd ref='262193751' />
-    <nd ref='414635892' />
+  <way id='187972989' action='delete' timestamp='2018-04-08T15:48:02Z' uid='690673' user='Sto-Sto' visible='true' version='19' changeset='57916365'>
     <tag k='cycleway' v='opposite_lane' />
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='goods' v='delivery' />
@@ -3975,9 +3931,7 @@
     <tag k='psv' v='yes' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='233571007' action='modify' timestamp='2017-11-08T09:45:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='10' changeset='53603997'>
-    <nd ref='602651341' />
-    <nd ref='3024563471' />
+  <way id='233571007' action='delete' timestamp='2017-11-08T09:45:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='10' changeset='53603997'>
     <tag k='dual_carriageway' v='yes' />
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
@@ -4451,10 +4405,7 @@
     <tag k='source:maxspeed' v='PL:living_street' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='247800797' action='modify' timestamp='2018-12-30T16:43:15Z' uid='6085289' user='Knoblauch13' visible='true' version='13' changeset='65891697'>
-    <nd ref='273485828' />
-    <nd ref='275178481' />
-    <nd ref='2067207841' />
+  <way id='247800797' action='delete' timestamp='2018-12-30T16:43:15Z' uid='6085289' user='Knoblauch13' visible='true' version='13' changeset='65891697'>
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='30' />
@@ -4507,9 +4458,7 @@
     <tag k='surface' v='asphalt' />
     <tag k='turn:lanes' v='left|right' />
   </way>
-  <way id='253839214' action='modify' timestamp='2019-10-29T13:32:56Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='16' changeset='76346712'>
-    <nd ref='2420153436' />
-    <nd ref='5323112765' />
+  <way id='253839214' action='delete' timestamp='2019-10-29T13:32:56Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='16' changeset='76346712'>
     <tag k='hgv' v='no' />
     <tag k='highway' v='residential' />
     <tag k='lit' v='yes' />
@@ -4644,9 +4593,7 @@
     <tag k='sidewalk' v='separate' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='266581922' action='modify' timestamp='2018-04-08T15:48:04Z' uid='690673' user='Sto-Sto' visible='true' version='18' changeset='57916365'>
-    <nd ref='251688939' />
-    <nd ref='2419894856' />
+  <way id='266581922' action='delete' timestamp='2018-04-08T15:48:04Z' uid='690673' user='Sto-Sto' visible='true' version='18' changeset='57916365'>
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='highway' v='residential' />
     <tag k='lanes' v='3' />
@@ -4998,9 +4945,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='295356990' action='modify' timestamp='2018-05-14T07:44:28Z' uid='3335899' user='GBAB' visible='true' version='6' changeset='58942572'>
-    <nd ref='236138215' />
-    <nd ref='236137518' />
+  <way id='295356990' action='delete' timestamp='2018-05-14T07:44:28Z' uid='3335899' user='GBAB' visible='true' version='6' changeset='58942572'>
     <tag k='highway' v='tertiary' />
     <tag k='maxspeed' v='30' />
     <tag k='name' v='Świętego Idziego' />
@@ -5288,9 +5233,7 @@
     <tag k='lit' v='yes' />
     <tag k='surface' v='paving_stones' />
   </way>
-  <way id='298560674' timestamp='2017-11-08T09:45:19Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='3' changeset='53603997'>
-    <nd ref='3024563471' />
-    <nd ref='2419367407' />
+  <way id='298560674' action='delete' timestamp='2017-11-08T09:45:19Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='3' changeset='53603997'>
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='30' />
@@ -5299,9 +5242,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='298560676' timestamp='2018-05-10T12:51:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='5' changeset='58849786'>
-    <nd ref='3024563489' />
-    <nd ref='2419367468' />
+  <way id='298560676' action='delete' timestamp='2018-05-10T12:51:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='5' changeset='58849786'>
     <tag k='dual_carriageway' v='yes' />
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
@@ -5773,9 +5714,7 @@
     <tag k='source:maxspeed' v='PL:living_street' />
     <tag k='surface' v='sett' />
   </way>
-  <way id='364784222' action='modify' timestamp='2019-06-30T18:38:09Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='14' changeset='71762684'>
-    <nd ref='226009919' />
-    <nd ref='206372380' />
+  <way id='364784222' action='delete' timestamp='2019-06-30T18:38:09Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='14' changeset='71762684'>
     <tag k='cycleway:left' v='opposite_lane' />
     <tag k='goods' v='delivery' />
     <tag k='highway' v='residential' />
@@ -5819,9 +5758,7 @@
     <tag k='highway' v='service' />
     <tag k='service' v='driveway' />
   </way>
-  <way id='368325433' timestamp='2018-05-14T09:27:25Z' uid='3335899' user='GBAB' visible='true' version='9' changeset='58945588'>
-    <nd ref='3721726318' />
-    <nd ref='30375949' />
+  <way id='368325433' action='delete' timestamp='2018-05-14T09:27:25Z' uid='3335899' user='GBAB' visible='true' version='9' changeset='58945588'>
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='30' />
@@ -5831,9 +5768,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='cobblestone' />
   </way>
-  <way id='368325434' action='modify' timestamp='2018-05-14T09:27:25Z' uid='3335899' user='GBAB' visible='true' version='7' changeset='58945588'>
-    <nd ref='30375949' />
-    <nd ref='236138215' />
+  <way id='368325434' action='delete' timestamp='2018-05-14T09:27:25Z' uid='3335899' user='GBAB' visible='true' version='7' changeset='58945588'>
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
     <tag k='maxspeed' v='30' />
@@ -6277,10 +6212,7 @@
     <tag k='highway' v='service' />
     <tag k='service' v='driveway' />
   </way>
-  <way id='551180073' action='modify' timestamp='2018-04-08T15:48:06Z' uid='690673' user='Sto-Sto' visible='true' version='5' changeset='57916365'>
-    <nd ref='5323112765' />
-    <nd ref='5332405315' />
-    <nd ref='2420153454' />
+  <way id='551180073' action='delete' timestamp='2018-04-08T15:48:06Z' uid='690673' user='Sto-Sto' visible='true' version='5' changeset='57916365'>
     <tag k='cycleway' v='opposite_lane' />
     <tag k='hgv' v='no' />
     <tag k='highway' v='residential' />
@@ -6340,9 +6272,7 @@
     <tag k='surface' v='sett' />
     <tag k='tunnel' v='building_passage' />
   </way>
-  <way id='587231932' timestamp='2018-05-10T12:51:48Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='58849786'>
-    <nd ref='2419367461' />
-    <nd ref='602651341' />
+  <way id='587231932' action='delete' timestamp='2018-05-10T12:51:48Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='58849786'>
     <tag k='dual_carriageway' v='yes' />
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
@@ -6352,9 +6282,7 @@
     <tag k='source:maxspeed' v='PL:zone30' />
     <tag k='surface' v='asphalt' />
   </way>
-  <way id='587231933' timestamp='2018-05-10T12:51:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='58849786'>
-    <nd ref='2419367468' />
-    <nd ref='2419367461' />
+  <way id='587231933' action='delete' timestamp='2018-05-10T12:51:49Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='1' changeset='58849786'>
     <tag k='dual_carriageway' v='yes' />
     <tag k='highway' v='tertiary' />
     <tag k='lit' v='yes' />
@@ -6412,10 +6340,7 @@
     <tag k='highway' v='service' />
     <tag k='service' v='driveway' />
   </way>
-  <way id='664281394' timestamp='2020-01-18T08:02:14Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='2' changeset='79724343'>
-    <nd ref='3721726318' />
-    <nd ref='5377839922' />
-    <nd ref='236136675' />
+  <way id='664281394' action='delete' timestamp='2020-01-18T08:02:14Z' uid='1722488' user='Mateusz Konieczny' visible='true' version='2' changeset='79724343'>
     <tag k='dual_carriageway' v='yes' />
     <tag k='highway' v='tertiary' />
     <tag k='lanes' v='2' />

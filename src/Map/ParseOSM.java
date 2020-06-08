@@ -22,7 +22,7 @@ public class ParseOSM {
 
     public ParseOSM() {
         try {
-            File inputFile = new File("map_obwodnica.osm");
+            File inputFile = new File("map.osm");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             dbFactory.setCoalescing(true);
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -106,6 +106,7 @@ public class ParseOSM {
         this.kn_lst = w_lst.buildKnotsRelations(kn_lst);
         this.l_lst = w_lst.buildLanes(kn_lst);
         this.l_lst.buildMaxSpeed();
+        this.w_lst.buildLanes2(kn_lst,l_lst);
     }
 
     public KnotList getKnotList() {
@@ -114,6 +115,10 @@ public class ParseOSM {
 
     public LaneList getLaneList() {
         return l_lst;
+    }
+
+    public WayList getWayList() {
+        return w_lst;
     }
 
     public void simulate() throws Exception {

@@ -83,16 +83,18 @@ public class Lane {
                         break;
                     if(i+(int)plus>(cells.size()-1)) { //pojazd wyjeżdża z sekcji
                         cells.get(i).getCar().decreaseSection();
-                        //   if(lane.get(i).car.getNumberOfSectionToPass()==0)
-                        // {
-                        //lane.get(i).freeCell();
-                        //}
-                        //else {
+                           if(cells.get(i).getCar().getNumberOfSectionToPass()==0)
+                        {
+                        cells.get(i).freeCell();
+                        cond=false;
+                        }
+                        else {
                         if(cells.get(i).getCar().getNumberOfSectionToPass()!=0)
                             outOfSection.add(cells.get(i).getCar());
                         cells.get(i).freeCell();
                         cond = false;
-                        //}
+
+                        }
                     }
 
                     else if (cells.get(i + (int) plus).getOccupied()) {//jezeli komorka do ktroej chce pojechac jest zajeta

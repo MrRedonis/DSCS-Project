@@ -14,6 +14,12 @@ public class SimulateFrame extends JFrame {
         JButton start = new JButton("Start");
         JButton stop = new JButton("Stop");
         JButton plus = new JButton("Plus");
+        JButton next=new JButton("Next Section");
+next.addActionListener(p->simpanel.onNext());
+opt.add(next);
+        JButton previous=new JButton("Previous Section");
+       previous.addActionListener(p->simpanel.onPrevious());
+       opt.add(previous);
 
         plus.addActionListener(p-> {
             try {

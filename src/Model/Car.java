@@ -11,6 +11,7 @@ public class Car {
     private Random generayor=new Random();
     private int velocity=18;
     public boolean setmax=true;
+public int iter=generayor.nextInt(20);
    public Color color= new Color(generayor.nextInt(255),generayor.nextInt(255),generayor.nextInt(255));
 
     public int maxvelocity;//prędkość do której dąży pojazd

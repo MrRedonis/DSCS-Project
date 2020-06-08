@@ -8,10 +8,16 @@ import java.util.Random;
 public class Car {
     Random generayor = new Random();
     int velocity = 18;
+    public  int iter=generayor.nextInt(20);
+
+
     public Color color= new Color(generayor.nextInt(255),generayor.nextInt(255),generayor.nextInt(255));
 
     public int maxvelocity;//prędkość do której dąży pojazd
-    private int numberOfSectionToPass = generayor.nextInt(20);// liczba komórek do przejechania
+    private int numberOfSectionToPass = generayor.nextInt(30);// liczba komórek do przejechania
+int getIter(){
+    return iter;
+}
 
     //public Cell[][] neighbourhood;
     private int distanceToNextCarInFront = 0; // odległość od poprzedzającego samochodu; nie może być mniejsza od 0

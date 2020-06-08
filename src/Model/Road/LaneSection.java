@@ -23,6 +23,12 @@ public class LaneSection {
         return lane;
     }
 
+    public void setLabel(String label) {
+        this.label = label;
+    }
+    public String getLabel(){
+        return this.label;
+    }
 
     public LaneSection(int from, int to, String label, boolean islimited) {
         this.lane = new ArrayList<>();
@@ -35,6 +41,7 @@ public class LaneSection {
             lane.add(new Cell(i));
         }
     }
+    //public LaneSection(int howmany, int )
     public LaneSection(ArrayList<Cell> cells,String label, boolean islimited)
     {
         this.lane=cells;
@@ -53,11 +60,13 @@ public class LaneSection {
                 if(lane.get(i).car.setmax)
                 lane.get(i).car.maxvelocity=lane.get(i).getMaxVelocity();
                 lane.get(i).car.setmax=true;
-
+                lane.get(i).car.iter--;
                 cond = true;
                 toMaxVelocity(i);
                // if(lane.get(i).car.getDistanceToNextCarInFront()<3)lane.get(i).car.decreaseVelocity(18);
                 while (cond) {
+
+                    if(lane.get(i).car.iter%4==0)lane.get(i).car.decreaseVelocity(18);
                     double plus = (lane.get(i).car.getVelocity()) / 18;// zmiana predkosci z km/h na kratki/s
                     if (plus < 1)//jezeli jest mniejsza niz 1 nie zmieniaj pozycji pojazdu; zakladamy minimalna predkosc 18 km/h
                         break;

@@ -8,7 +8,7 @@ import java.util.Random;
 public class Car {
     Random generayor = new Random();
     int velocity = 18;
-    int init=generayor.nextInt(20);
+    int init=generayor.nextInt(30);
     public Color color= new Color(generayor.nextInt(255),generayor.nextInt(255),generayor.nextInt(255));
 
     public int maxvelocity;//prędkość do której dąży pojazd
